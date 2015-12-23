@@ -6,6 +6,7 @@ body {
 	width:100%;
 	color:#7e7c7c;
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+	font:family:"OptimusPrinceps.ttf";
 	background:#090909 url(../images/main_bg.gif) repeat left top;
 }
 html, .main {
@@ -31,6 +32,7 @@ h2 {
 	line-height:1.2em;
 	color:#fff;
 	text-transform:none;
+	font:family:"OptimusPrinceps.ttf";
 }
 p {
 	margin:8px 0;
@@ -66,6 +68,7 @@ h1 {
 	line-height:1.2em;
 	text-transform:none;
 	letter-spacing:2px;
+	font:family:"OptimusPrinceps.ttf";
 }
 h1 a, h1 a:hover {
 	color:#fff;
