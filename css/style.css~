@@ -33,15 +33,16 @@ h2 {
 	line-height:1.2em;
 	color:#fff;
 	text-transform:none;
-	font:family:"OptimusPrinceps.ttf";
+	font-family:"OptimusPrinceps.ttf";
 }
 p {
 	margin:8px 0;
 	padding:0 0 8px 0;
 }
 a {
-	color:#d9d9dc;
-	text-decoration:underline;
+	color:#9300a4;	
+	/*color:#d9d9dc;*/
+	text-decoration:bold;
 }
 .header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
 	margin:0;
@@ -147,11 +148,21 @@ h1 small {
 	text-decoration:none;
 	text-transform:none;
 	text-align:center;
+	position:relative;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	/* ...and now for the proper property */
+	transition:.5s;
 }
 .menu_nav ul li.active a, .menu_nav ul li a:hover {
 	text-decoration:none;
 	color:#fff;
-	background:url(../images/menu_a.gif) repeat-x left top;
+	bottom:2px;
+	background:#000000;
+	/*background:#202020;*/
+	/*background:url(../images/menu_a.gif) repeat-x left top;*/
 }
 .content {
 	/*background:#181818 url(../images/content_bg.gif) repeat left top;*/
@@ -260,9 +271,19 @@ p.infopost a:hover {
 p.infopost span.date {
 	color:#d9d9dc;
 }
+.article a:hover {
+	text-decoration: none;
+	color:#FFFFFF;
+}
 .article a {
 	text-decoration: none;
 	color:#9300a4;
+	-o-transition:.5s;
+	  -ms-transition:.5s;
+	  -moz-transition:.5s;
+	  -webkit-transition:.5s;
+	  /* ...and now for the proper property */
+	  transition:.5s;
 }
 .article a.com {
 	margin:0;
@@ -291,7 +312,11 @@ p.infopost span.date {
 	color:#d9d9dc;
 	text-decoration:none;
 	text-align:center;
-	background:url(../images/readmore.jpg) repeat-x left top;
+	background:#404040;
+	/*background:url(../images/readmore.jpg) repeat-x left top;*/
+}
+.post_content a.rm:hover {
+	background:#202020;
 }
 .post_content {
 	/*
@@ -305,6 +330,17 @@ p.infopost span.date {
 }
 .post_content a {
 	    text-decoration: none;
+	color:#9300a4;
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+.post_content a:hover {
+	    text-decoration: none;
+	color:#FFFFFF;
 }
 .article {
 	/*
@@ -327,6 +363,7 @@ p.infopost span.date {
 	color="#9300a4";
 	text-align:center;
 }
+
 .content p.pages {
 	margin:0;
 	padding:24px 20px;
