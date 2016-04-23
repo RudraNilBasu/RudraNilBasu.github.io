@@ -1,5 +1,14 @@
 /* Design by http://www.dreamtemplate.com */
 @charset "utf-8";
+::selection {
+  background: #9300a4; /* WebKit/Blink Browsers */
+	/*background:red;*/
+	color:white;
+}
+::-moz-selection {
+  background: #9300a4; /* Gecko Browsers */
+	color:white;
+}
 body {
 	margin:0;
 	padding:0;
