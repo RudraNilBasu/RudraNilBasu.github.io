@@ -136,13 +136,13 @@ h1 small {
 	padding:0 12px;
 	height:50px;
 	float:left;
-	background:url(../images/menu.gif) repeat-x left top;
+	/*background:url(../images/menu.gif) repeat-x left top;*/
 }
 .menu_nav ul li {
 	margin:0;
 	padding:0 2px 0 0;
 	float:left;
-	background:url(../images/menu_split.gif) no-repeat right center;
+	/*background:url(../images/menu_split.gif) no-repeat right center;*/
 }
 .menu_nav ul li a {
 	display:block;
