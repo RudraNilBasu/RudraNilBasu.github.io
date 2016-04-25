@@ -169,6 +169,7 @@ h1 small {
 	color:#fff;
 	bottom:2px;
 	background:#000000;
+	/*background:#9300a4*/
 	/*background:#202020;*/
 	/*background:url(../images/menu_a.gif) repeat-x left top;*/
 }
