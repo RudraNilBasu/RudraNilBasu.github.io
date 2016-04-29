@@ -1,4 +1,8 @@
 @charset "utf-8";
+.review{
+	/*background:#7e7c7c;*/
+	color:#9300a4;
+}
 ::selection {
   background: #9300a4; /* WebKit/Blink Browsers */
 	/*background:red;*/
