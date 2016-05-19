@@ -16,11 +16,12 @@ body {
 	margin:0;
 	padding:0;
 	width:100%;
-	color:#7e7c7c;
+	color:#7e7c7c; /* Color of the text in the body*/
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
 	font:family:"OptimusPrinceps.ttf";
 	/*background:#090909 url(../images/main_bg.gif) repeat left top;*/
-	background:#090909;
+    /*background color Previously it was #090909*/
+	background:#000000;
 }
 html, .main {
 	padding:0;
@@ -179,7 +180,8 @@ h1 small {
 }
 .content {
 	/*background:#181818 url(../images/content_bg.gif) repeat left top;*/
-	background:#181818
+    /*Color of the Content Background*/
+	background:#090909; /*Previously it was #181818*/
 }
 .content_resize {
 	margin:0 auto;
@@ -330,7 +332,7 @@ p.infopost span.date {
 	/*background:url(../images/readmore.jpg) repeat-x left top;*/
 }
 .post_content a.rm:hover {
-	background:#202020;
+	background:#202020; /*Color of the Play Button*/
 }
 .post_content {
 	/*
