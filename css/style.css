@@ -216,6 +216,7 @@ h1 small {
 	/*background:#181818 url(../images/content_bg.gif) repeat left top;*/
     /*Color of the Content Background*/
 	background:#090909; /*Previously it was #181818*/
+	background-image: url("images/bkg.jpg");
 }
 .content_resize {
 	margin:0 auto;
