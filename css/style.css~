@@ -12,15 +12,50 @@
   background: #9300a4; /* Gecko Browsers */
 	color:white;
 }
+
+
+h3 {
+  position: relative;
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+h3 span {
+  /*background: #000;*/
+  padding: 0 15px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Cinzel Decorative', cursive;
+}
+
+h3:before {
+  background: #ddd;
+  content: "";
+  display: block;
+  height: 1px;
+  position: absolute;
+    /*This was 50%*/
+    top: 150%;
+  width: 100%;
+}
+h3:before {
+  left: 0;
+}
+
+
 body {
 	margin:0;
 	padding:0;
 	width:100%;
-	color:#7e7c7c;
+	color:#7e7c7c; /* Color of the text in the body*/
 	font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
-	font:family:"OptimusPrinceps.ttf";
+	font-family: 'Cinzel Decorative', cursive;
+	/*font-family:'OptimusPrinceps';*/
+	font-size: 15px;
 	/*background:#090909 url(../images/main_bg.gif) repeat left top;*/
-	background:#090909;
+    /*background color Previously it was #090909*/
+	background:#000000;
 }
 html, .main {
 	padding:0;
@@ -45,7 +80,7 @@ h2 {
 	line-height:1.2em;
 	color:#fff;
 	text-transform:none;
-	font-family:"OptimusPrinceps.ttf";
+	/*font-family:"OptimusPrinceps.ttf";*/
 }
 p {
 	margin:8px 0;
@@ -82,7 +117,7 @@ h1 {
 	line-height:1.2em;
 	text-transform:none;
 	letter-spacing:2px;
-	font-family:"OptimusPrinceps";
+	/*font-family:"OptimusPrinceps";*/
 }
 h1 a, h1 a:hover {
 	color:#fff;
@@ -179,7 +214,8 @@ h1 small {
 }
 .content {
 	/*background:#181818 url(../images/content_bg.gif) repeat left top;*/
-	background:#181818
+    /*Color of the Content Background*/
+	background:#090909; /*Previously it was #181818*/
 }
 .content_resize {
 	margin:0 auto;
@@ -330,7 +366,7 @@ p.infopost span.date {
 	/*background:url(../images/readmore.jpg) repeat-x left top;*/
 }
 .post_content a.rm:hover {
-	background:#202020;
+	background:#202020; /*Color of the Play Button*/
 }
 .post_content {
 	/*
