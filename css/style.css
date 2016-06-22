@@ -365,6 +365,7 @@ p.infopost span.date {
 	text-decoration:none;
 	text-align:center;
 	background:#404040;
+    font-family: 'Cinzel Decorative', cursive;
 	/*background:url(../images/readmore.jpg) repeat-x left top;*/
 }
 .post_content a.rm:hover {
