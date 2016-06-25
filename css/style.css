@@ -61,6 +61,17 @@ html, .main {
 	padding:0;
 	margin:0;
 }
+
+.smallround{
+    border-radius: 15px;
+}
+
+.roundrect {
+    border-radius: 55px;
+}
+.roundrect:hover {
+    
+}
 .main {
 	background:no-repeat center top;
 }
