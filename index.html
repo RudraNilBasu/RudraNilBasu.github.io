@@ -3,6 +3,14 @@
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <title>Rudra's Yard</title>
+
+<!-- Collapse and expand imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- end of expand collapse imports-->
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
@@ -107,10 +115,16 @@
 	<a target="_blank" href="https://in.linkedin.com/in/rudra-nil-basu-7a1679a4"><img src="images/linkedin.png" width="25px"></img></a>
 	<a target="_blank" href="https://github.com/RudraNilBasu"><img src="images/github.png" width="25px"></img></a>
 	<a target="_blank" href="https://www.quora.com/profile/Rudra-Nil-Basu"><img src="images/quora.png" width="25px"></img></a>
+<!--
+  <a ><img data-toggle="collapse" data-target="#mail" src="images/email.png" width="25px"></img></a>
+-->
 
 	<!-- Keep a collapse button which will collapse and un-collapse whenever the email button is clicked -->
 
-          <img src="images/email.png" width="25px"></img>
+          <a><img data-toggle="collapse" data-target="#mail" src="images/email.png" width="25px"></img></a>
+          <div id="mail" class="collapse">
+            <p align="center">rudra.nil.basu.1996@gmail.com</p>
+          </div>
 
    </p>
 
