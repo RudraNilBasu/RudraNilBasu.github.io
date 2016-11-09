@@ -3,6 +3,14 @@
 <head>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 <title>Other Projects | Rudra's Yard</title>
+
+<!-- Collapse and expand imports-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- end of expand collapse imports-->
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
@@ -187,7 +195,11 @@
 
 	<!-- Keep a collapse button which will collapse and un-collapse whenever the email button is clicked -->
 
-	 <img src="images/email.png" width="25px"></img>
+	 <!-- <img src="images/email.png" width="25px"></img> -->
+   <a ><img data-toggle="collapse" data-target="#mail" src="images/email.png" width="25px"></img></a>
+   <div id="mail" class="collapse">
+     <p align="center">rudra.nil.basu.1996@gmail.com</p>
+   </div>
 
    </p>
 
