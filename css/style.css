@@ -538,6 +538,37 @@ p.infopost span.date {
 	width:74px;
 	font-weight:bold;
 }
+
+.readmore{
+    
+    /*
+	border:1px solid #c0c0c0;
+	margin:0;
+	padding:5px 2px;
+	height:16px;
+    */
+    /*background-color: #8B008B;*/
+}
+.readmore a{
+    border-radius: 5px;
+    /*Padding*/
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    /*Padding End*/
+    color: #FFFFFF;
+    background-color: #800080;
+    /*font-family: "Times New Roman", Times, serif;*/
+    font-size: 20px;
+    font-weight: bold;
+    /*background-color: #736F6E;*/
+}
+.readmore a:hover{
+    color: #FFFFFF;
+    background-color: #151515;
+}
+
 ol {
 	list-style:none;
 }
