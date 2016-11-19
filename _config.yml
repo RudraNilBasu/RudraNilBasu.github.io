@@ -1,0 +1,37 @@
+# Site settings
+title: "Rudra's Yard"
+email: rudra.nil.basu.1996@gmail.com
+description: "Random stuff."
+baseurl: ""
+url: "http://rudranilbasu.github.io/"
+title_description: "Game Designer and Programer. Makes games with the name of PriZm. I am writting this thing just to use up the space and to check how a long paragraph looks here. Thank you for your patience"
+title_image: "https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/13524319_1069954599741227_7923496662977308722_n.jpg?oh=1b34b7ff2a9c43c0a418e84ae9aa0840&oe=58BC85AB"
+google_analytics: "UA-20365477-4"
+disqus_account: cartenoire
+github_repository: https://github.com/jacobtomlinson/carte-noire
+addthis_id: ra-513c6fa83da6ec67
+post_limit: 5
+
+# Social usernames/URLs
+twitter_username: RudraNilBasu
+github_username:  RudraNilBasu
+instagram_username: RudraNilBasu
+linkedin_link: https://in.linkedin.com/in/rudra-nil-basu-7a1679a4
+google_plus_link: http://rudranilbasu.github.io/
+stackoverflow_link: http://stackoverflow.com/users/6794119/rudra
+xing_link:
+facebook_link: https://www.facebook.com/rudra.n.basu
+
+# Footer
+footer_left: "Made with <i class=\"fa fa-heart\"></i> by <a href=\"https://twitter.com/RudraNilBasu\">Rudra Nil Basu</a>"
+footer_right: "&lt;/&gt; on <a href=\"https://github.com/RudraNilBasu\">Github</a> &nbsp;<i class=\"fa fa-github-alt\"></i>"
+
+# Build settings
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+exclude: [vendor]
