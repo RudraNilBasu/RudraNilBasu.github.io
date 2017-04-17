@@ -1,0 +1,1017 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Jekyll v3.3.1">
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Rudra's Yard • Game Designer | Programmer">
+  <link rel="alternate" type="application/atom+xml" title="Recent commits to Jekyll’s master branch" href="https://github.com/jekyll/jekyll/commits/master.atom">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900">
+  <link rel="stylesheet" href="/css/screen.css">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Begin Jekyll SEO tag v2.2.0 -->
+<title>Permalinks | Rudra’s Yard • Game Designer | Programmer</title>
+<meta property="og:title" content="Permalinks">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Permalinks refer to the URLs (excluding the domain name or directory folder) for your pages, posts, or collections. Jekyll supports a flexible way to build permalinks, allowing you to leverage various template variables or choose built-in permalink styles (such as date) that automatically use a template-variable pattern.">
+<meta property="og:description" content="Permalinks refer to the URLs (excluding the domain name or directory folder) for your pages, posts, or collections. Jekyll supports a flexible way to build permalinks, allowing you to leverage various template variables or choose built-in permalink styles (such as date) that automatically use a template-variable pattern.">
+<link rel="canonical" href="http://localhost:4000/docs/permalinks/">
+<meta property="og:url" content="http://localhost:4000/docs/permalinks/">
+<meta property="og:site_name" content="Rudra’s Yard • Game Designer | Programmer">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-04-11T01:59:38-07:00">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@RudraNilBasu">
+<meta name="google-site-verification" content="onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY">
+<script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "BlogPosting",
+"headline": "Permalinks",
+"datePublished": "2017-04-11T01:59:38-07:00",
+"description": "Permalinks refer to the URLs (excluding the domain name or directory folder) for your pages, posts, or collections. Jekyll supports a flexible way to build permalinks, allowing you to leverage various template variables or choose built-in permalink styles (such as date) that automatically use a template-variable pattern.",
+"publisher": {"@type": "Organization",
+"logo": {"@type": "ImageObject",
+"url": "http://localhost:4000/img/final_1.png"}},
+"mainEntityOfPage": {"@type": "WebPage",
+"@id": "http://localhost:4000/docs/permalinks/"},
+"url": "http://localhost:4000/docs/permalinks/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <!--[if lt IE 9]>
+  <script src="/js/html5shiv.min.js"></script>
+  <script src="/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+
+<body class="wrap">
+  <header>
+  <nav class="mobile-nav show-on-mobiles">
+    <ul>
+  <li class="">
+    <a href="/">Home</a>
+  </li>
+  <li class="current">
+    <a href="/docs/home/">Docs</a>
+  </li>
+  <li class="">
+    <a href="/news/">News</a>
+  </li>
+  <li class="">
+    <a href="/community/">Community</a>
+  </li>
+  <li class="">
+    <a href="/help/">Help</a>
+  </li>
+  <li>
+    <a href="https://github.com/jekyll/jekyll">GitHub</a>
+  </li>
+</ul>
+
+  </nav>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <h1>
+        <a href="/">
+          <span class="sr-only">Jekyll</span>
+          <img src="/img/final_1.png" width="249" height="115" alt="Jekyll Logo">
+        </a>
+      </h1>
+    </div>
+    <nav class="main-nav unit two-thirds hide-on-mobiles">
+      <ul>
+  <li class="">
+    <a href="/">Home</a>
+  </li>
+  <li class="current">
+    <a href="/docs/home/">Docs</a>
+  </li>
+  <li class="">
+    <a href="/news/">News</a>
+  </li>
+  <li class="">
+    <a href="/community/">Community</a>
+  </li>
+  <li class="">
+    <a href="/help/">Help</a>
+  </li>
+  <li>
+    <a href="https://github.com/jekyll/jekyll">GitHub</a>
+  </li>
+</ul>
+
+    </nav>
+  </div>
+</header>
+
+
+    <section class="docs">
+    <div class="grid">
+
+      <div class="docs-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the docs…</option>
+    
+    <optgroup label="Getting Started">
+      
+  
+  
+  <option value="/docs/home/">Welcome</option>
+
+  
+  
+  <option value="/docs/quickstart/">Quick-start guide</option>
+
+  
+  
+  <option value="/docs/installation/">Installation</option>
+
+  
+  
+  <option value="/docs/usage/">Basic Usage</option>
+
+  
+  
+  <option value="/docs/structure/">Directory structure</option>
+
+  
+  
+  <option value="/docs/configuration/">Configuration</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Your Content">
+      
+  
+  
+  <option value="/docs/frontmatter/">Front Matter</option>
+
+  
+  
+  <option value="/docs/posts/">Writing posts</option>
+
+  
+  
+  <option value="/docs/drafts/">Working with drafts</option>
+
+  
+  
+  <option value="/docs/pages/">Creating pages</option>
+
+  
+  
+  <option value="/docs/static-files/">Static Files</option>
+
+  
+  
+  <option value="/docs/variables/">Variables</option>
+
+  
+  
+  <option value="/docs/collections/">Collections</option>
+
+  
+  
+  <option value="/docs/datafiles/">Data Files</option>
+
+  
+  
+  <option value="/docs/assets/">Assets</option>
+
+  
+  
+  <option value="/docs/migrations/">Blog migrations</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Customization">
+      
+  
+  
+  <option value="/docs/templates/">Templates</option>
+
+  
+  
+  <option value="/docs/includes/">Includes</option>
+
+  
+  
+  <option value="/docs/permalinks/">Permalinks</option>
+
+  
+  
+  <option value="/docs/pagination/">Pagination</option>
+
+  
+  
+  <option value="/docs/plugins/">Plugins</option>
+
+  
+  
+  <option value="/docs/themes/">Themes</option>
+
+  
+  
+  <option value="/docs/extras/">Extras</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Deployment">
+      
+  
+  
+  <option value="/docs/github-pages/">GitHub Pages</option>
+
+  
+  
+  <option value="/docs/deployment-methods/">Deployment methods</option>
+
+  
+  
+  <option value="/docs/continuous-integration/">Continuous Integration</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Miscellaneous">
+      
+  
+  
+  <option value="/docs/troubleshooting/">Troubleshooting</option>
+
+  
+  
+  <option value="/docs/sites/">Sites using Jekyll</option>
+
+  
+  
+  <option value="/docs/resources/">Resources</option>
+
+  
+  
+  <option value="/docs/upgrading/0-to-2/">Upgrading from 0.x to 2.x</option>
+
+  
+  
+  <option value="/docs/upgrading/2-to-3/">Upgrading from 2.x to 3.x</option>
+
+
+    </optgroup>
+    
+    <optgroup label="Meta">
+      
+  
+  
+  <option value="/docs/contributing/">Contributing</option>
+
+  
+  
+  <option value="/docs/maintaining/">Maintaining Jekyll</option>
+
+  
+  
+  <option value="/docs/conduct/">Code of Conduct</option>
+
+  
+  
+  <option value="/docs/history/">History</option>
+
+
+    </optgroup>
+    
+  </select>
+</div>
+
+
+      <div class="unit four-fifths">
+        <article>
+          <div class="improve right hide-on-mobiles">
+            <a href="https://github.com/jekyll/jekyll/edit/master/docs/_docs/permalinks.md"><i class="fa fa-pencil"></i>  Improve this page</a>
+          </div>
+          <h1>Permalinks</h1>
+          <p>Permalinks refer to the URLs (excluding the domain name or directory folder) for your pages, posts, or collections.
+Jekyll supports a flexible way to build permalinks, allowing you to leverage various template variables or choose built-in permalink styles (such as <code class="highlighter-rouge">date</code>) that automatically use a template-variable pattern.</p>
+
+<p>You construct permalinks by creating a template URL where dynamic elements are represented by colon-prefixed keywords. The default template permalink is <code class="highlighter-rouge">/:categories/:year/:month/:day/:title.html</code>. Each of the colon-prefixed keywords is a template variable.</p>
+
+<h2 id="where-to-configure-permalinks">Where to configure permalinks</h2>
+
+<p>You can configure your site’s permalinks through the <a href="/docs/configuration/">Configuration</a> file or in the <a href="/docs/frontmatter/">Front Matter</a> for each post, page, or collection.</p>
+
+<p>Setting permalink styles in your configuration file applies the setting globally in your project. You configure permalinks in your <code class="highlighter-rouge">_config.yml</code> file like this:</p>
+
+<div class="language-yaml highlighter-rouge">
+<pre class="highlight"><code><span class="s">permalink</span><span class="pi">:</span> <span class="s">/:categories/:year/:month/:day/:title.html</span>
+</code></pre>
+</div>
+
+<p>If you don’t specify any permalink setting, Jekyll uses the above pattern as the default.</p>
+
+<p>The permalink can also be set using a built-in permalink style:</p>
+
+<div class="language-yaml highlighter-rouge">
+<pre class="highlight"><code><span class="s">permalink</span><span class="pi">:</span> <span class="s">date</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">date</code> is the same as <code class="highlighter-rouge">:categories/:year/:month/:day/:title.html</code>, the default. See <a href="#builtinpermalinkstyles">Built-in Permalink Styles</a> below for more options.</p>
+
+<p>Setting the permalink in your post, page, or collection’s front matter overrides any global settings. Here’s an example:</p>
+
+<div class="language-yaml highlighter-rouge">
+<pre class="highlight"><code><span class="nn">---</span>
+<span class="s">title</span><span class="pi">:</span> <span class="s">My page title</span>
+<span class="s">permalink</span><span class="pi">:</span> <span class="s">/mypageurl/</span>
+<span class="nn">---</span>
+</code></pre>
+</div>
+
+<p>Even if your configuration file specifies the <code class="highlighter-rouge">date</code> style, the URL for this page would be <code class="highlighter-rouge">http://somedomain.com/mypageurl/</code>.</p>
+
+<p>When you use permalinks that omit the <code class="highlighter-rouge">.html</code> file extension (called “pretty URLs”) Jekyll builds the file as index.html placed inside a folder with the page’s name. For example:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>├── mypageurl
+│   └── index.html
+</code></pre>
+</div>
+
+<p>With a URL such as <code class="highlighter-rouge">/mypageurl/</code>, servers automatically load the index.html file inside the folder, so users can simply navigate to <code class="highlighter-rouge">http://somedomain.com/mypageurl/</code> to get to <code class="highlighter-rouge">mypageurl/index.html</code>.</p>
+
+<h2 id="template-variables">Template variables for permalinks</h2>
+
+<p>The following table lists the template variables available for permalinks. You can use these variables in the <code class="highlighter-rouge">permalink</code> property in your config file.</p>
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p><code>year</code></p>
+      </td>
+      <td>
+        <p>Year from the post's filename</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>month</code></p>
+      </td>
+      <td>
+        <p>Month from the post's filename</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>i_month</code></p>
+      </td>
+      <td>
+        <p>Month from the post's filename without leading zeros.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>day</code></p>
+      </td>
+      <td>
+        <p>Day from the post's filename</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>i_day</code></p>
+      </td>
+      <td>
+        <p>Day from the post's filename without leading zeros.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>short_year</code></p>
+      </td>
+      <td>
+        <p>Year from the post's filename without the century.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>hour</code></p>
+      </td>
+      <td>
+        <p>
+          Hour of the day, 24-hour clock, zero-padded from the post's <code>date</code> front matter. (00..23)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>minute</code></p>
+      </td>
+      <td>
+        <p>
+          Minute of the hour from the post's <code>date</code> front matter. (00..59)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>second</code></p>
+      </td>
+      <td>
+        <p>
+          Second of the minute from the post's <code>date</code> front matter. (00..59)
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>title</code></p>
+      </td>
+      <td>
+        <p>
+            Title from the document’s filename. May be overridden via
+            the document’s <code>slug</code> YAML front matter.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>slug</code></p>
+      </td>
+      <td>
+        <p>
+            Slugified title from the document’s filename (any character
+            except numbers and letters is replaced as hyphen). May be
+            overridden via the document’s <code>slug</code> YAML front matter.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>categories</code></p>
+      </td>
+      <td>
+        <p>
+          The specified categories for this post. If a post has multiple
+          categories, Jekyll will create a hierarchy (e.g. <code>/category1/category2</code>).
+          Also Jekyll automatically parses out double slashes in the URLs,
+          so if no categories are present, it will ignore this.
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Note that all template variables relating to time or categories are available to posts only.</p>
+
+<h2 id="builtinpermalinkstyles">Built-in permalink styles</h2>
+
+<p>Although you can specify a custom permalink pattern using <a href="#template-variables">template variables</a>, Jekyll also provides the following built-in styles for convenience.</p>
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>Permalink Style</th>
+      <th>URL Template</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p><code>date</code></p>
+      </td>
+      <td>
+        <p><code>/:categories/:year/:month/:day/:title.html</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>pretty</code></p>
+      </td>
+      <td>
+        <p><code>/:categories/:year/:month/:day/:title/</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>ordinal</code></p>
+      </td>
+      <td>
+        <p><code>/:categories/:year/:y_day/:title.html</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>none</code></p>
+      </td>
+      <td>
+        <p><code>/:categories/:title.html</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>Rather than typing <code class="highlighter-rouge">permalink: /:categories/:year/:month/:day/:title/</code>, you can just type <code class="highlighter-rouge">permalink: pretty</code>.</p>
+
+<div class="note info">
+<h5>Specifying permalinks through the YAML Front Matter</h5>
+<p>Built-in permalink styles are not recognized in YAML Front Matter. As a result, <code>permalink: pretty</code> will not work.</p>
+</div>
+
+<h2 id="permalink-style-examples">Permalink style examples with posts</h2>
+
+<p>Here are a few examples to clarify how permalink styles get applied with posts.</p>
+
+<p>Given a post named: <code class="highlighter-rouge">/2009-04-29-slap-chop.md</code></p>
+
+<div class="mobile-side-scroller">
+<table>
+  <thead>
+    <tr>
+      <th>URL Template</th>
+      <th>Resulting Permalink URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <p>None specified, or <code>permalink: date</code></p>
+      </td>
+      <td>
+        <p><code>/2009/04/29/slap-chop.html</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>pretty</code></p>
+      </td>
+      <td>
+        <p><code>/2009/04/29/slap-chop/</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>/:month-:day-:year/:title.html</code></p>
+      </td>
+      <td>
+        <p><code>/04-29-2009/slap-chop.html</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>/blog/:year/:month/:day/:title/</code></p>
+      </td>
+      <td>
+        <p><code>/blog/2009/04/29/slap-chop/</code></p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p><code>/:year/:month/:title</code></p>
+        <p>See <a href="#extensionless-permalinks">Extensionless permalinks with no trailing slashes</a> for details.</p>
+      </td>
+      <td>
+        <p><code>/2009/04/slap-chop</code></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2 id="pages-and-collections">Permalink settings for pages and collections</h2>
+
+<p>The permalink setting in your configuration file specifies the permalink style used for posts, pages, and collections. However, because pages and collections don’t have time or categories, these aspects of the permalink style are ignored with pages and collections.</p>
+
+<p>For example:</p>
+
+<ul>
+  <li>A permalink style of <code class="highlighter-rouge">/:categories/:year/:month/:day/:title.html</code> for posts becomes <code class="highlighter-rouge">/:title.html</code> for pages and collections.</li>
+  <li>A permalink style of <code class="highlighter-rouge">pretty</code> (or <code class="highlighter-rouge">/:categories/:year/:month/:day/:title/</code>), which omits the file extension and contains a trailing slash, will update page and collection permalinks to also omit the file extension and contain a trailing slash: <code class="highlighter-rouge">/:title/</code>.</li>
+  <li>A permalink style of <code class="highlighter-rouge">date</code>, which contains a trailing file extension, will update page permalinks to also contain a trailing file extension: <code class="highlighter-rouge">/:title.html</code>. But no time or category information will be included.</li>
+</ul>
+
+<h2 id="permalinks-and-default-paths">Permalinks and default paths</h2>
+
+<p>The path to the post or page in the built site differs for posts, pages, and collections:</p>
+
+<h3 id="posts">Posts</h3>
+
+<p>The subfolders into which you may have organized your posts inside the <code class="highlighter-rouge">_posts</code> directory will not be part of the permalink.</p>
+
+<p>If you use a permalink style that omits the <code class="highlighter-rouge">.html</code> file extension, each post is rendered as an <code class="highlighter-rouge">index.html</code> file inside a folder with the post’s name (for example, <code class="highlighter-rouge">categoryname/2016/12/01/mypostname/index.html</code>).</p>
+
+<h3 id="pages">Pages</h3>
+
+<p>Unlike posts, pages by default mimic the source directory structure exactly. (The only exception is if your page has a <code class="highlighter-rouge">permalink</code> declared its front matter — in that case, the structure honors the permalink setting instead of the source folder structure.)</p>
+
+<p>As with posts, if you use a permalink style that omits the <code class="highlighter-rouge">.html</code> file extension, each page is rendered as an <code class="highlighter-rouge">index.html</code> file inserted inside a folder with the page’s name (for example, <code class="highlighter-rouge">mypage/index.html</code>).</p>
+
+<h3 id="collections">Collections</h3>
+
+<p>By default, collections follow a similar structure in the <code class="highlighter-rouge">_site</code> folder as pages, except that the path is prefaced by the collection name. For example: <code class="highlighter-rouge">collectionname/mypage.html</code>. For permalink settings that omit the file extension, the path would be <code class="highlighter-rouge">collection_name/mypage/index.html</code>.</p>
+
+<p>Collections have their own way of setting permalinks. Additionally, collections have unique template variables available available (such as <code class="highlighter-rouge">path</code> and <code class="highlighter-rouge">output_ext</code>). See the <a href="../collections/#permalinks">Configuring permalinks for collections</a> in Collections for more information.</p>
+
+<h2 id="flattening-pages-in-_site-on-build">Flattening pages in _site on build</h2>
+
+<p>If you want to flatten your pages (pull them out of subfolders) in the <code class="highlighter-rouge">_site</code> directory when your site builds (similar to posts), add the <code class="highlighter-rouge">permalink</code> property to the front matter of each page, with no path specified:</p>
+
+<div class="highlighter-rouge">
+<pre class="highlight"><code>---
+title: My page
+permalink: mypageurl.html
+---
+</code></pre>
+</div>
+
+<h2 id="extensionless-permalinks">Extensionless permalinks with no trailing slashes</h2>
+
+<p>Jekyll supports permalinks that contain neither a trailing slash nor a file extension, but this requires additional support from the web server to properly serve. When using these types of permalinks, output files written to disk will still have the proper file extension (typically <code class="highlighter-rouge">.html</code>), so the web server must be able to map requests without file extensions to these files.</p>
+
+<p>Both <a href="../github-pages/">GitHub Pages</a> and the Jekyll’s built-in WEBrick server handle these requests properly without any additional work.</p>
+
+<h3 id="apache">Apache</h3>
+
+<p>The Apache web server has extensive support for content negotiation and can handle extensionless URLs by setting the <a href="https://httpd.apache.org/docs/current/content-negotiation.html#multiviews">multiviews</a> option in your <code class="highlighter-rouge">httpd.conf</code> or <code class="highlighter-rouge">.htaccess</code> file:</p>
+
+<figure class="highlight"><pre><code class="language-apache" data-lang="apache"><span class="nc">Options</span> +MultiViews</code></pre></figure>
+
+<h3 id="nginx">Nginx</h3>
+
+<p>The <a href="http://nginx.org/en/docs/http/ngx_http_core_module.html#try_files">try_files</a> directive allows you to specify a list of files to search for to process a request. The following configuration will instruct nginx to search for a file with an <code class="highlighter-rouge">.html</code> extension if an exact match for the requested URI is not found.</p>
+
+<figure class="highlight"><pre><code class="language-nginx" data-lang="nginx"><span class="k">try_files</span> <span class="nv">$uri</span> <span class="nv">$uri</span><span class="s">.html</span> <span class="nv">$uri</span><span class="n">/</span> <span class="p">=</span><span class="mi">404</span><span class="p">;</span></code></pre></figure>
+
+<h2 id="linking-without-regard-to-permalink-styles">Linking without regard to permalink styles</h2>
+
+<p>You can create links in your topics to other posts, pages, or collection items in a way that is valid no matter what permalink configuration you choose. By using the <code class="highlighter-rouge">link</code> tag, if you change your permalinks, your links won’t break. See <a href="../templates#link">Linking to pages</a> in Templates for more details.</p>
+
+          
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="section-nav">
+      <div class="left align-right">
+          
+            
+            
+            <a href="/docs/includes/" class="prev">Back</a>
+          
+      </div>
+      <div class="right align-left">
+          
+            
+            
+            <a href="/docs/pagination/" class="next">Next</a>
+          
+      </div>
+    </div>
+    <div class="clear"></div>
+    
+        </article>
+      </div>
+
+      <div class="unit one-fifth hide-on-mobiles">
+  <aside>
+    
+    <h4>Getting Started</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="/docs/home/">Welcome</a></li>
+
+  
+  
+  <li class=""><a href="/docs/quickstart/">Quick-start guide</a></li>
+
+  
+  
+  <li class=""><a href="/docs/installation/">Installation</a></li>
+
+  
+  
+  <li class=""><a href="/docs/usage/">Basic Usage</a></li>
+
+  
+  
+  <li class=""><a href="/docs/structure/">Directory structure</a></li>
+
+  
+  
+  <li class=""><a href="/docs/configuration/">Configuration</a></li>
+
+</ul>
+
+    
+    <h4>Your Content</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="/docs/frontmatter/">Front Matter</a></li>
+
+  
+  
+  <li class=""><a href="/docs/posts/">Writing posts</a></li>
+
+  
+  
+  <li class=""><a href="/docs/drafts/">Working with drafts</a></li>
+
+  
+  
+  <li class=""><a href="/docs/pages/">Creating pages</a></li>
+
+  
+  
+  <li class=""><a href="/docs/static-files/">Static Files</a></li>
+
+  
+  
+  <li class=""><a href="/docs/variables/">Variables</a></li>
+
+  
+  
+  <li class=""><a href="/docs/collections/">Collections</a></li>
+
+  
+  
+  <li class=""><a href="/docs/datafiles/">Data Files</a></li>
+
+  
+  
+  <li class=""><a href="/docs/assets/">Assets</a></li>
+
+  
+  
+  <li class=""><a href="/docs/migrations/">Blog migrations</a></li>
+
+</ul>
+
+    
+    <h4>Customization</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="/docs/templates/">Templates</a></li>
+
+  
+  
+  <li class=""><a href="/docs/includes/">Includes</a></li>
+
+  
+  
+  <li class="current"><a href="/docs/permalinks/">Permalinks</a></li>
+
+  
+  
+  <li class=""><a href="/docs/pagination/">Pagination</a></li>
+
+  
+  
+  <li class=""><a href="/docs/plugins/">Plugins</a></li>
+
+  
+  
+  <li class=""><a href="/docs/themes/">Themes</a></li>
+
+  
+  
+  <li class=""><a href="/docs/extras/">Extras</a></li>
+
+</ul>
+
+    
+    <h4>Deployment</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="/docs/github-pages/">GitHub Pages</a></li>
+
+  
+  
+  <li class=""><a href="/docs/deployment-methods/">Deployment methods</a></li>
+
+  
+  
+  <li class=""><a href="/docs/continuous-integration/">Continuous Integration</a></li>
+
+</ul>
+
+    
+    <h4>Miscellaneous</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="/docs/troubleshooting/">Troubleshooting</a></li>
+
+  
+  
+  <li class=""><a href="/docs/sites/">Sites using Jekyll</a></li>
+
+  
+  
+  <li class=""><a href="/docs/resources/">Resources</a></li>
+
+  
+  
+  <li class=""><a href="/docs/upgrading/0-to-2/">Upgrading from 0.x to 2.x</a></li>
+
+  
+  
+  <li class=""><a href="/docs/upgrading/2-to-3/">Upgrading from 2.x to 3.x</a></li>
+
+</ul>
+
+    
+    <h4>Meta</h4>
+    <ul>
+
+  
+  
+  <li class=""><a href="/docs/contributing/">Contributing</a></li>
+
+  
+  
+  <li class=""><a href="/docs/maintaining/">Maintaining Jekyll</a></li>
+
+  
+  
+  <li class=""><a href="/docs/conduct/">Code of Conduct</a></li>
+
+  
+  
+  <li class=""><a href="/docs/history/">History</a></li>
+
+</ul>
+
+    
+  </aside>
+</div>
+
+
+      <div class="clear"></div>
+
+    </div>
+  </section>
+
+
+  <footer>
+  <div class="grid">
+    <div class="unit one-third center-on-mobiles">
+      <p>The contents of this website are <br>© 2017 under the terms of the <a href="https://github.com/jekyll/jekyll/blob/master/LICENSE">MIT License</a>.</p>
+    </div>
+    <div class="unit two-thirds align-right center-on-mobiles">
+      <p>
+        Proudly hosted by
+        <a href="https://github.com">
+          <img src="/img/footer-logo.png" width="100" height="30" alt="GitHub • Social coding">
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<span class=\"sr-only\">Permalink</span><i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("docs")[0] || document.getElementsByClassName("news")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+  
+  <!-- Gauges (http://get.gaug.es/) -->
+  <script>
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '503c5af6613f5d0f19000027');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+
+
+
+  <!-- Google Analytics (https://www.google.com/analytics) -->
+  <script>
+    !function(j,e,k,y,l,L){j.GoogleAnalyticsObject=y,j[y]||(j[y]=function(){
+    (j[y].q=j[y].q||[]).push(arguments)}),j[y].l=+new Date,l=e.createElement(k),
+    L=e.getElementsByTagName(k)[0],l.src='//www.google-analytics.com/analytics.js',
+    L.parentNode.insertBefore(l,L)}(window,document,'script','ga');
+
+    ga('create', 'UA-50755011-1', 'jekyllrb.com');
+    ga('send', 'pageview');
+
+  </script>
+
+
+
+</body>
+</html>
