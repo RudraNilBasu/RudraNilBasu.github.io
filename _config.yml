@@ -10,6 +10,26 @@ help_url: https://github.com/jekyll/jekyll-help
 
 timezone: America/Los_Angeles
 
+#Global vars
+asset-img-path: /img/assets/
+asset-path: /assets/
+asset-download-path: /downloads/assets/
+
+#artist-img-path: /img/artists/
+
+#external-download-path: http://brackeys.com/devassets/
+
+#Featured
+#featured-banner: 2D Mega Pack
+#featured-two-thirds: Modern Weapons
+#featured-one-third: Desert Environment
+
+#home-banner: Sci-Fi Weapons
+
+#home-one-third-1: 2D Mega Pack
+#home-one-third-2: Western Props Pack
+#home-one-third-3: Sci-Fi Vehicles
+
 defaults:
   -
     scope:
@@ -23,6 +43,17 @@ defaults:
       type: "posts"
     values:
       layout: "news_item"
+  - scope:
+      type: assets
+    values:
+      layout: asset-view
+      banner-img: Banner.jpg
+      two-thirds-img: TwoThirds.jpg
+      one-third-img: OneThird.jpg
+      priority: 10
+      show: true
+      is-for-course: false
+      file-type: .zip
 
 
 collections:
@@ -34,6 +65,10 @@ collections:
     output: true
   tutorials:
     output: true
+  assets:
+    output: true
+    permalink: /:collection/:title/
+  artists:
 
 name: Rudra's Yard • Game Designer | Programmer
 description: Rudra Nil Basu- Personal portfolio
