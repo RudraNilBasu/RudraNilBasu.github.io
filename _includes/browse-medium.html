@@ -1,6 +1,30 @@
-<div class = "browse-medium">
-	{% assign name = include.asset.title %}
-	<p>{{name}}</p>
+<div class="browse-medium">
+	{% assign name = include.asset.title | remove: " -" | replace: " ", "-" | downcase %}
+	{% assign img-path = site.asset-img-path | append: name %}
+	<a href="{{site.github.url}}{{site.asset-path}}{{name}}/">
+		<img src="{{site.github.url}}{{img-path}}/{{include.asset.one-third-img}}" alt="{{include.asset.title}}">
+	</a>
+</div>
+
+<style>
+	.browse-medium {
+		/*text-align: right;*/
+		display: inline;
+	}
+	.browse-medium img {
+	}
+	.browse-medium img:hover {
+		outline: 2px solid white;
+	}
+</style>
+<!--
+<div class = "browse-medium asset">
+	{% assign name = include.asset.title | remove: " -" | replace: " ", "-" | downcase %}
+	{% assign img-path = site.asset-img-path | append: name %}
+	
+	<a href="{{site.github.url}}{{site.asset-path}}{{name}}/">
+		<img src="{{site.github.url}}{{img-path}}/{{include.asset.one-third-img}}" alt="{{include.asset.title}}">
+	</a>
 </div>
 
 <style>
@@ -8,3 +32,4 @@
 
 	}
 </style>
+-->

@@ -5,4 +5,18 @@ style:
   asset-view
 ---
 
-<p>HI</p>
+{% assign img-folder = page.title | remove: " -" | replace: " ", "-" | downcase %}
+{% assign img-path = site.asset-img-path | append: img-folder %}
+
+<div id="content">
+	<section>
+		<h1>{{ page.name }}</h1>
+	</section>
+</div>
+
+<style>
+	#content {
+		max-width: 967px;
+		margin: auto;
+	}
+</style>
