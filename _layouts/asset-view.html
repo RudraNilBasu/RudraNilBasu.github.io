@@ -11,12 +11,44 @@ style:
 <div id="content">
 	<section>
 		<h1>{{ page.name }}</h1>
+		<img src="{{ img-path }}/{{ page.banner }}" />
 	</section>
+	<section class="screenshots">
+		{% for screenshot in page.screenshots %}
+			<img class="screenshot" src="{{site.github.url}}{{img-path}}/{{screenshot}}" alt="{{page.title}} Screenshot" border="0" width="500" height="273">
+		{% endfor %}
+	</section>
+	<div id="container" style="width:100%;">                                   
+  		<div id="left" style="float:left; width:50%;"> 
+  			<ul>
+  				<li>Made with: {{ page.engine }}</li>
+  				<li>Platform: {{ page.platform }}</li>
+  				<li>Genre: {{ page.genre }}</li>
+  				<li>Type: {{ page.type }}</li>
+  				<li>Role: {{ page.role }}</li>
+  			</ul>
+  		</div>                     
+  		<div id="right" style="float:right; width:50%;">{{ page.content }}</div>                   
+	</div>
 </div>
 
 <style>
 	#content {
 		max-width: 967px;
 		margin: auto;
+	}
+	.screenshots img {
+		width: calc(33.333% - 6px);
+		float: left;
+		margin: 3px;
+
+		box-sizing: border-box;
+
+		box-shadow: 2px 2px 20px #232323;
+
+		transition: all .1s ease-in-out;
+	}
+	.screenshots img:hover {
+		transform: scale(1.15);
 	}
 </style>
