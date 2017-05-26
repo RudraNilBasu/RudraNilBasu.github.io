@@ -7,7 +7,7 @@ platform: Windows
 genre: Arcade
 type: 2D
 role: Programmer, Designer
-banner: Banner.jpg
+banner: Banner.png
 screenshots:
   - Screenshot01.jpg
   - Screenshot02.jpg
