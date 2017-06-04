@@ -1,0 +1,54 @@
+---
+layout: default
+
+title: Browse
+---
+
+{% assign projects = site.assets %}
+
+<div class = "browse">
+
+<h1>Games</h1>
+
+{% for project in projects %}
+	{% include browse-medium.html asset=project %}
+{% endfor %}
+
+<a href="/games/">View more...</a>
+
+</div>
+
+
+<div class = "browse">
+
+<h1>Open Source Projects</h1>
+
+{% for project in projects %}
+	{% include browse-medium.html asset=project %}
+{% endfor %}
+
+<a href="/games/">View more...</a>
+
+</div>
+
+
+
+<div class = "browse">
+
+<h1>Others</h1>
+
+{% for project in projects %}
+	{% include browse-medium.html asset=project %}
+{% endfor %}
+
+<a href="/games/">View more...</a>
+
+</div>
+
+
+<style>
+.browse {
+	max-width: 967px;
+	margin: auto;
+}
+</style>
