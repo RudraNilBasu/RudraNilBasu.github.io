@@ -5,9 +5,25 @@
   <li class="{% if page.url contains '/games/' %}current{% endif %}">
     <a href="/games/">Games</a>
   </li>
+  <li class="{% if page.url contains '/community/' %}current{% endif %}">
+    <a href="/projects/">Other Projects</a>
+  </li>
+  <li class="{% if page.url contains '/community/' %}current{% endif %}">
+    <a href="/achievements/">Achievements</a>
+  </li>
+  <li class="{% if page.url contains '/community/' %}current{% endif %}">
+    <a href="/art/">Art</a>
+  </li>
   <li class="{% if page.author %}current{% endif %}">
     <a href="/news/">News</a>
   </li>
+  <li class="{% if page.url contains '/community/' %}current{% endif %}">
+    <a href="/archieves/">Archieves</a>
+  </li>
+  <li class="{% if page.url contains '/community/' %}current{% endif %}">
+    <a href="/about/">About Me</a>
+  </li>
+  <!--
   <li class="{% if page.url contains '/community/' %}current{% endif %}">
     <a href="/community/">Community</a>
   </li>
@@ -17,4 +33,5 @@
   <li>
     <a href="{{ site.repository }}">GitHub</a>
   </li>
+  -->
 </ul>
