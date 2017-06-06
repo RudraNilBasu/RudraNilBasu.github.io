@@ -9,7 +9,9 @@ title: Games
 <div class = "browse">
 
 {% for project in projects %}
-	{% include browse-medium.html asset=project %}
+	{% if project.category == "game" %}
+		{% include browse-medium.html asset=project %}
+	{% endif %}
 {% endfor %}
 
 </div>

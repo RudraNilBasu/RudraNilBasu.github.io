@@ -2,6 +2,7 @@
 name: Trapped
 
 title: Trapped
+category: game
 engine: Unity 5
 platform: Windows
 genre: Arcade

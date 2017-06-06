@@ -2,6 +2,7 @@
 name: Followed
 
 title: Followed
+category: game
 engine: Unity 5
 platform: Windows
 genre: Horror

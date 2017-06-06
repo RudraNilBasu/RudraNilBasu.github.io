@@ -2,6 +2,7 @@
 name: Evolve
 
 title: Evolve
+category: game
 engine: Unity 5
 platform: Windows
 genre: Arcade
