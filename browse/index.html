@@ -31,6 +31,18 @@ title: Browse
 
 </div>
 
+<div class = "browse">
+
+<h1>Art</h1>
+
+{% for project in projects %}
+	{% include browse-medium.html asset=project %}
+{% endfor %}
+
+<a href="/art/">View more...</a>
+
+</div>
+
 
 
 <div class = "browse">

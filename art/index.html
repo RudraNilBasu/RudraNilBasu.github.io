@@ -1,0 +1,24 @@
+---
+layout: default
+
+title: Games
+---
+
+{% assign projects = site.assets %}
+
+<div class = "browse">
+
+{% for project in projects %}
+	{% if project.category == "art" %}
+		{% include browse-medium.html asset=project %}
+	{% endif %}
+{% endfor %}
+
+</div>
+
+<style>
+.browse {
+	max-width: 967px;
+	margin: auto;
+}
+</style>
