@@ -1,3 +1,2 @@
-# Jekyll docs site
-
+# Rudra's Yard
 [Rudra's Yard](http://rudranilbasu.me/)
