@@ -11,9 +11,12 @@ title: Browse
 <h1>Games</h1>
 
 {% for project in projects %}
-	{% include browse-medium.html asset=project %}
+	{% if project.category == "game" %}
+		{% include browse-medium.html asset=project %}
+	{% endif %}
 {% endfor %}
 
+<br>
 <a href="/games/">View more...</a>
 
 </div>
@@ -24,9 +27,12 @@ title: Browse
 <h1>Open Source Projects</h1>
 
 {% for project in projects %}
-	{% include browse-medium.html asset=project %}
+	{% if project.category == "opensource" %}
+		{% include browse-medium.html asset=project %}
+	{% endif %}
 {% endfor %}
 
+<br>
 <a href="/games/">View more...</a>
 
 </div>
@@ -36,9 +42,12 @@ title: Browse
 <h1>Art</h1>
 
 {% for project in projects %}
-	{% include browse-medium.html asset=project %}
+	{% if project.category == "art" %}
+		{% include browse-medium.html asset=project %}
+	{% endif %}
 {% endfor %}
 
+<br>
 <a href="/art/">View more...</a>
 
 </div>
@@ -50,9 +59,12 @@ title: Browse
 <h1>Others</h1>
 
 {% for project in projects %}
-	{% include browse-medium.html asset=project %}
+	{% if project.category == "other" %}
+		{% include browse-medium.html asset=project %}
+	{% endif %}
 {% endfor %}
 
+<br>
 <a href="/games/">View more...</a>
 
 </div>
