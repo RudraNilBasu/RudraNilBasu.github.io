@@ -1,2 +1,2 @@
 # Rudra's Yard
-[Rudra's Yard](http://rudranilbasu.me/)
+My portfolio: [Rudra's Yard](http://rudranilbasu.me/)
