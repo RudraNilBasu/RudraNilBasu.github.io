@@ -1,18 +1,29 @@
-<header>
-  <nav class="mobile-nav show-on-mobiles">
-    {% include primary-nav-items.html %}
-  </nav>
-  <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <h1>
-        <a href="/">
-          <span class="sr-only">Jekyll</span>
-          <img src="/img/final_1.png" width="249" height="115" alt="Rudra Logo">
-        </a>
-      </h1>
-    </div>
-    <nav class="main-nav unit two-thirds hide-on-mobiles">
-      {% include primary-nav-items.html %}
-    </nav>
-  </div>
-</header>
+<div class="wrapper">
+	
+	<header class="site-header">
+
+	<div class="header-limiter">
+
+		<div>
+			<a href="{{site.github.url}}/">
+			<img src="{{site.github.url}}/img/logo.png" alt="DevAssets Logo" width="169" height="78" border="0">
+			</a>
+		</div>
+
+		<nav>
+			<a href="{{site.github.url}}/" {% if page.url == "/" %} class="current"{% endif %}>Home</a>			
+
+			<a href="{{site.github.url}}/games/" {% if page.url == "/games/" %} class="current"{% endif %}>Games</a>
+
+			<a href="{{site.github.url}}/projects/" {% if page.url == "/projects/" %} class="current"{% endif %}>Other Projects</a>
+
+			<a href="{{site.github.url}}/achievements/" {% if page.url == "/achievements/" %} class="current"{% endif %}>Achievements</a>
+			
+			<a href="{{site.github.url}}/about/" {% if page.url == "/about/" %} class="current"{% endif %}>About</a>
+		</nav>
+	</div>
+
+	</header>
+
+</div>
+

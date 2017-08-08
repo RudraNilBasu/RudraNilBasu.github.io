@@ -1,7 +1,13 @@
+---
+# Browse
+---
 @charset "utf-8";
 
+// Import partials
+@import "variables";
+
 .browse {
-	max-width: 967px;
+	max-width: $browse-width;
 	margin: auto;
 }
 

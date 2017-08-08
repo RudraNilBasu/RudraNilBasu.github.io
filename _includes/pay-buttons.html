@@ -1,0 +1,83 @@
+{% assign asset-name = page.title | remove: " -" | replace: " ", "-" | downcase %}
+
+{% assign img-path = site.asset-img-path | append: asset-name %}
+
+{% include downloader.html %}
+{% include js/snipcart-helper-js.html %}
+
+<section class="pay-buttons" data-toggle="button">
+
+	<button
+		id="pay-button"
+		class="snipcart-add-item pay"
+		data-item-name="{{page.name}}"
+		data-item-id="{{asset-name}}"
+		data-item-image="{{site.github.url}}{{img-path}}/{{page.one-third-img}}"
+		data-item-description="{{page.description}}"
+		data-item-url="{{site.github.url}}{{page.url}}"
+		data-item-max-quantity="1"
+		data-item-price="5"
+		data-item-custom1-name="Price"
+		data-item-custom1-options="$2[-3.00]|$5|$10[+5.00]|$20[+15.00]"
+		data-item-custom2-name="Download"
+		data-item-custom2-value="{{download-path}}">
+		Pay what you want!
+	</button>
+
+	<button
+		id="pay-button-free"
+		class="pay"
+		style="display: none;"
+		onclick="Download()">
+		Grab it for free!
+	</button>
+
+	<label class="amount-button"><input type="radio" value="0" name="options" id="5" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$0</span>
+	</label>
+
+	<label class="amount-button"><input type="radio" value="20" name="options" id="4" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$20</span>
+	</label>
+
+	<label class="amount-button"><input type="radio" value="10" name="options" id="3" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$10</span>
+	</label>
+
+	<label class="amount-button active"><input type="radio" value="5" name="options" id="2" autocomplete="off" onclick="updatePayAmount(this.value)" checked><span>$5</span>
+	</label>
+
+	<label class="amount-button"><input type="radio" value="2" name="options" id="1" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$2</span>
+	</label>
+
+</section>
+
+<section class="tiers">
+
+{% for tier in page.tiers %}
+
+	<div class="tier" data-cost="{{tier.cost}}" data-title="{{tier.title}}">
+		<img src="{{img-path}}/{{tier.img}}.jpg">
+		<div class="tier-cost">
+			<h3>UNLOCKED AT</h3>
+			<h1>${{tier.cost}}</h1>
+		</div>
+		<div class="tier-footer">
+			<h3><b>{{tier.title}}</b> {{tier.after}}</h3>
+		</div>
+	</div>
+
+{% endfor %}
+	
+</section>
+
+<section>
+	<div class="message-box" id="msg-box-tier-1">
+		<p>WARNING: You will not recieve something! Add just $2 more to unlock!</p>
+		<a href="#" class="message-box-button" amount=2>Add $2</a>
+	</div>
+
+	<div class="message-box" id="msg-box-tier-2">
+		<p>WARNING: You will not recieve something! Add just $2 more to unlock!</p>
+		<a href="#" class="message-box-button" amount=2>Add $2</a>
+	</div>
+</section>
+
+{% include js/pay-buttons-js.html %}

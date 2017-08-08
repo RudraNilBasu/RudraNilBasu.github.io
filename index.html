@@ -1,107 +1,34 @@
 ---
 layout: default
-overview: true
+
+style:
+  home
+
+title: Home
 ---
 
-<section class="intro">
-  <div class="grid">
-    <div class="unit whole center-on-mobiles">
-      <p class="first" align="center">&nbsp;Rudra Nil Basu</p>
-    </div>
-  </div>
-</section>
-{% include pay-what-you-want.html %}
+<div class="home">
+	{% include pay-what-you-want.html %}
 
-<section class="features">
-  <div class="grid">
-    <div class="unit one-third">
-      <h2>Games</h2>
-      <p>
-        Over <em>15+</em> video game projects, made using <a href="https://unity3d.com" target="_blank">Unity Game Engine</a> in the last 4 years
-      </p>
-      <a href="/games/">View all Games &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Non game projects</h2>
-      <p>Mostly consisting of <a href="https://github.com/RudraNilBasu" target="_blank">open source projects</a>, hackathon projects or university projects</p>
-      <a href="/docs/templates/">View all projects &rarr;</a>
-    </div>
-    <div class="unit one-third">
-      <h2>Current Status</h2>
-      <p>
-        Third year CS undergrad. Makes games in free time and won <a>few awards</a> by doing so. Currently working under KDE for GSoC 2017
-      </p>
-      <a href="/docs/resume.pdf">Resume &rarr;</a>
-    </div>
-    <div class="clear"></div>
-  </div>
-</section>
+	<section>
+		{% include showreel.html %}
+                <!--
+		{% include featured-one-third.html %}
+		{% include featured-two-thirds.html %}
+                -->
+	</section>
 
-<section class="quickstart">
-    <div class="unit golden-small center-on-mobiles">
-      <p align="center">
-      <h3>Currently the site is in progress. Please visit the <a href="http://rudranilbasu.me/oldsite/" target="_blank">oldsite</a></h3>
-        <br><br>
-      </p>
-    </div>
-    <div class="clear"></div>
-</section>
 
+	{% include three-sections.html %}
 <!--
-<section class="quickstart">
-  <div class="grid">
-    <div class="unit golden-small center-on-mobiles">
-      <h3>Get up and running <em>in&nbsp;seconds</em>.</h3>
-    </div>
-    <div class="unit golden-large code">
-      <p class="title">Quick-start Instructions</p>
-      <div class="shell">
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">gem install jekyll bundler</span>
-        </p>
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">jekyll new my-awesome-site</span>
-        </p>
-        <p class="line">
-          <span class="path">~</span>
-          <span class="prompt">$</span>
-          <span class="command">cd my-awesome-site</span>
-        </p>
-        <p class="line">
-          <span class="path">~/my-awesome-site</span>
-          <span class="prompt">$</span>
-          <span class="command">bundle exec jekyll serve</span>
-        </p>
-        <p class="line">
-          <span class="output"># => Now browse to http://localhost:4000</span>
-        </p>
-      </div>
-    </div>
-    <div class="clear"></div>
-  </div>
-</section>
--->
+	<section>
+		{% assign one-third-1 = site.assets | where:"name", site.home-one-third-1 | first %}
+		{% assign one-third-2 = site.assets | where:"name", site.home-one-third-2 | first %}
+		{% assign one-third-3 = site.assets | where:"name", site.home-one-third-3 | first %}
 
-<!--
-<section class="free-hosting">
-  <div class="grid">
-    <div class="unit whole">
-      <div class="grid pane">
-        <div class="unit whole center-on-mobiles">
-          <img src="img/octojekyll.png" width="300" height="251" alt="Free Jekyll hosting on GitHub Pages">
-          <div class="pane-content">
-            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
-            <p>Sick of dealing with hosting companies? <a href="https://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/about-supported-custom-domains/">custom domain name</a> and&nbsp;all.</p>
-            <a href="https://pages.github.com/">Learn more about GitHub Pages &rarr;</a>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
-  </div>
-</section>
+		{% include one-third-asset.html asset=one-third-1 %}
+		{% include one-third-asset.html asset=one-third-2 %}
+		{% include one-third-asset.html asset=one-third-3 %}
+	</section>
 -->
+</div>

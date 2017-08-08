@@ -1,78 +1,49 @@
 ---
 layout: default
 
+style:
+  browse
+
 title: Browse
 ---
 
-{% assign projects = site.assets %}
+{% assign sorted_assets = (site.assets | sort: 'priority') %}
 
-<div class = "browse">
+<div class="browse">
 
-<h1>Games</h1>
+	{% include featured-two-thirds.html %}
 
-{% for project in projects %}
-	{% if project.category == "game" %}
-		{% include browse-medium.html asset=project %}
-	{% endif %}
-{% endfor %}
+	{% include featured-one-third.html %}
 
-<br>
-<a href="/games/">View more...</a>
+	{% include featured-banner.html %}
 
-</div>
+	{% for asset in sorted_assets %}
+		{% if asset.show %}
 
+			{% unless asset.is-for-course %}
 
-<div class = "browse">
+			{% include one-third-asset.html asset=asset %}
 
-<h1>Open Source Projects</h1>
+			{% endunless %}
 
-{% for project in projects %}
-	{% if project.category == "opensource" %}
-		{% include browse-medium.html asset=project %}
-	{% endif %}
-{% endfor %}
+		{% endif %}
+	{% endfor %}
 
-<br>
-<a href="/opensource/">View more...</a>
+	<div class="course-assets" id="course-assets">
 
-</div>
+	<h1>Course Assets</h1>
+	<p>Models, sprites, scripts, sounds etc. used in the <a href="http://youtube.com/brackeys/">Brackeys</a> courses.</p>
 
-<div class = "browse">
+	{% for asset in sorted_assets %}
+		{% if asset.show and asset.is-for-course%}
 
-<h1>Art</h1>
+			{% include one-third-asset.html asset=asset %}
+			
+		{% endif %}
+	{% endfor %}
 
-{% for project in projects %}
-	{% if project.category == "art" %}
-		{% include browse-medium.html asset=project %}
-	{% endif %}
-{% endfor %}
+	</div>
 
-<br>
-<a href="/art/">View more...</a>
+	{% include newsletter-field.html %}
 
 </div>
-
-
-
-<div class = "browse">
-
-<h1>Others</h1>
-
-{% for project in projects %}
-	{% if project.category == "other" %}
-		{% include browse-medium.html asset=project %}
-	{% endif %}
-{% endfor %}
-
-<br>
-<a href="/games/">View more...</a>
-
-</div>
-
-
-<style>
-.browse {
-	max-width: 967px;
-	margin: auto;
-}
-</style>

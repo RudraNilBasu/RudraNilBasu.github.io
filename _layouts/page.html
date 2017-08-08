@@ -1,18 +1,17 @@
 ---
 layout: default
+
+style:
+  page
 ---
 
-<section class="standalone">
-  <div class="grid">
+<section>
+	<h1>{{page.title}}</h1>
 
-    <div class="unit whole">
-      <article>
-        <h1>{{ page.title }}</h1>
-        {{ content }}
-      </article>
-    </div>
+	{{content}}
 
-    <div class="clear"></div>
-
-  </div>
+	<br/>
+	<br/>
+	<br/>
+	<br/>
 </section>

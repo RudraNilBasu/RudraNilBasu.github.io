@@ -1,24 +1,28 @@
 ---
 layout: default
 
+style:
+  browse
+
 title: Games
 ---
 
-{% assign projects = site.assets %}
+{% assign sorted_assets = (site.assets | sort: 'priority') %}
 
-<div class = "browse">
+<div class="browse">
 
-{% for project in projects %}
-	{% if project.category == "game" %}
-		{% include browse-medium.html asset=project %}
-	{% endif %}
-{% endfor %}
+	<div class="course-assets" id="course-assets">
 
+	<h1>Video Game Projects</h1>
+	<p>Models, sprites, scripts, sounds etc. used in the <a href="http://youtube.com/brackeys/">Brackeys</a> courses.</p>
+
+	{% for asset in sorted_assets %}
+		{% if asset.show and asset.game%}
+
+			{% include one-third-asset.html asset=asset %}
+			
+		{% endif %}
+	{% endfor %}
+
+	</div>
 </div>
-
-<style>
-.browse {
-	max-width: 967px;
-	margin: auto;
-}
-</style>

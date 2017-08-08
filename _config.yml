@@ -1,48 +1,70 @@
-markdown: kramdown
-highlighter: rouge
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
 
-gauges_id: 503c5af6613f5d0f19000027
-google_analytics_id: UA-50755011-1
-google_site_verification: onQcXpAvtHBrUI5LlroHNE_FP0b2qvFyPq7VZw36iEY
-
-repository: https://github.com/jekyll/jekyll
-help_url: https://github.com/jekyll/jekyll-help
-
-timezone: America/Los_Angeles
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Rudra's Yard
+description: > # this means to ignore newlines until "baseurl:"
+  Game Designer, Programmer
+  Rudra Nil Basu - Personal portfolio
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+twitter_username: RudraNilBasu
+github_username:  RudraNilBasu
 
 #Global vars
 asset-img-path: /img/assets/
 asset-path: /assets/
 asset-download-path: /downloads/assets/
 
-#artist-img-path: /img/artists/
+artist-img-path: /img/artists/
 
-#external-download-path: http://brackeys.com/devassets/
+external-download-path: http://brackeys.com/devassets/
+
+#Snipcart
+snipcart-api-key: NjY3ZTgwNGQtNjM2Ni00YjUzLWExZGYtNjRjNGRlNzcxZmIwNjM2MTE0NTA4MDE5ODI4MDU5
+#OLD TEST KEY
+#M2RjMTc3NGUtYjNhMC00NTFlLWJjN2ItOTBkNGNkNDRjN2U2NjM2MTE0NTA4MDE5ODI4MDU5
 
 #Featured
-#featured-banner: 2D Mega Pack
-#featured-two-thirds: Modern Weapons
-#featured-one-third: Desert Environment
+featured-banner: 2D Mega Pack
+featured-two-thirds: Sci-Fi Weapons
+featured-one-third: Desert Environment
 
-#home-banner: Sci-Fi Weapons
+home-banner: General Textures
 
-#home-one-third-1: 2D Mega Pack
-#home-one-third-2: Western Props Pack
-#home-one-third-3: Sci-Fi Vehicles
+home-one-third-1: 2D Mega Pack
+home-one-third-2: Modern Weapons
+home-one-third-3: Sci-Fi Vehicles
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+gems:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: css/_sass
+  style: compressed
+
+collections:
+  assets:
+    output: true
+    permalink: /:collection/:title/
+  artists:
 
 defaults:
-  -
-    scope:
-      path: "_docs"
-      type: "docs"
-    values:
-      layout: "docs"
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: "news_item"
   - scope:
       type: assets
     values:
@@ -54,40 +76,3 @@ defaults:
       show: true
       is-for-course: false
       file-type: .zip
-
-
-collections:
-  docs:
-    permalink: /:collection/:path/
-    output: true
-  posts:
-    permalink: /news/:year/:month/:day/:title/
-    output: true
-  tutorials:
-    output: true
-  assets:
-    output: true
-    permalink: /:collection/:title/
-  artists:
-
-name: Rudra's Yard • Game Designer | Programmer
-description: Rudra Nil Basu- Personal portfolio
-url: https://jekyllrb.com
-
-twitter:
-  username: RudraNilBasu
-
-logo: /img/final_1.png
-
-gems:
-  - jekyll-avatar
-  - jekyll-feed
-  - jekyll-mentions
-  - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jemoji
-
-exclude:
-  - .gitignore
-  - README.md

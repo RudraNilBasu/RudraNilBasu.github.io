@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Survival Game Assets | Rudra's Yard</title>
+	<meta property="og:title" content="Survival Game Assets | Rudra's Yard" /> 
+
+	
+		<meta name="description" content="These are the models, sounds, scripts and UI elements used in the Survival Game course.">
+		<meta property="og:description" content="These are the models, sounds, scripts and UI elements used in the Survival Game course." />
+	
+
+	<meta property="og:url" content="/assets/survival-game-assets/" />
+
+	
+		
+		
+		<meta property='og:image' content='/img/assets/survival-game-assets/Banner.jpg'/>
+	
+
+	<link rel="stylesheet" href="/css/main.css">
+	<link rel="canonical" href="">
+	<link rel="alternate" type="application/rss+xml" title="Rudra's Yard" href="/feed.xml">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+	
+		<script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="NjY3ZTgwNGQtNjM2Ni00YjUzLWExZGYtNjRjNGRlNzcxZmIwNjM2MTE0NTA4MDE5ODI4MDU5"></script>
+
+<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+
+<link type="text/css" href="/css/snipcart.css" rel="stylesheet /">
+	
+
+	
+		<link rel="stylesheet" type="text/css" href="/css/asset-view.css">
+	
+
+	
+
+	
+
+</head>
+
+  <body>
+
+    <div class="wrapper">
+	
+	<header class="site-header">
+
+	<div class="header-limiter">
+
+		<div>
+			<a href="/">
+			<img src="/img/logo.png" alt="DevAssets Logo" width="169" height="78" border="0">
+			</a>
+		</div>
+
+		<nav>
+			<a href="/" >Home</a>			
+
+			<a href="/games/" >Games</a>
+
+			<a href="/projects/" >Other Projects</a>
+
+			<a href="/achievements/" >Achievements</a>
+			
+			<a href="/about/" >About</a>
+		</nav>
+	</div>
+
+	</header>
+
+</div>
+
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+
+
+
+<section>
+
+	<img class="banner" src="/img/assets/survival-game-assets/Banner.jpg" alt="Survival Game Assets Banner" border="0">
+
+</section>
+
+<section class="screenshots">
+
+	
+	<img class="screenshot" src="/img/assets/survival-game-assets/Screenshot01.jpg" alt="Survival Game Assets Screenshot" border="0">
+	
+	<img class="screenshot" src="/img/assets/survival-game-assets/Screenshot02.jpg" alt="Survival Game Assets Screenshot" border="0">
+	
+	<img class="screenshot" src="/img/assets/survival-game-assets/Screenshot03.jpg" alt="Survival Game Assets Screenshot" border="0">
+	
+
+</section>
+
+<section>
+	<h1>Survival Game Assets</h1>
+</section>
+
+<section class="information">
+	<div class="description">
+
+		
+
+		
+			<p><p>These are the models, sounds, scripts and UI elements used in the <a href="https://www.youtube.com/playlist?list=PLPV2KyIb3jR7F_B4p8X3YwHPaExh0R9Kk" target="_blank">Survival Game course</a>.</p>
+
+<p><strong>The models have been repackaged along with some cool new ones <a href="/assets/adventure-starter-pack/">HERE</a>.</strong></p>
+</p>
+		
+		
+	</div>
+	<div class="contains">
+		<h3>Contains:</h3>
+		<ul>
+			
+			<li>Scripts</li>
+			
+			<li>Sounds</li>
+			
+			<li>UI</li>
+			
+			<li>Arms</li>
+			
+			<li>Axe</li>
+			
+			<li>Mace</li>
+			
+			<li>Knife</li>
+			
+			<li>Campfire</li>
+			
+			<li>Boat</li>
+			
+			<li>Bridge</li>
+			
+			<li>Dock</li>
+			
+			<li>Fences</li>
+			
+			<li>Rocks</li>
+			
+			<li>And more!</li>
+			
+		</ul>
+	</div>
+</section>
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/download-modal.css">
+
+
+
+
+
+<div class="download-modal hidden" id="download-modal">
+
+	<h1>Download</h1>
+
+	<p class="download-message">You can choose to download the asset right away or wait for later by using the link we have sent to your email.</p>
+
+	<div class="download-buttons">
+		<a class="btn-download big-button" onclick='Download()'>Get Started</a>
+		<a href="#" class="btn-cancel" onclick='closeDownloadModal()'>Close</a>
+	</div>
+
+</div>
+
+<script>
+var downloadPathShort = "/downloads/assets/";
+var downloadFile = "survival-game-assets";
+var downloadFileType = ".zip";
+var downloadPath = "/downloads/assets/survival-game-assets.zip";
+
+var downloadIDs = [];
+
+
+function updateDownloadPath (newPath) {
+	downloadPath = newPath;
+	$("#pay-button").attr("data-item-custom2-value", newPath);
+}
+
+function openDownloadModal () {
+	$('#download-modal').removeClass("hidden");
+	$("#download-modal").fadeIn();
+}
+
+function Download () {
+	window.location.replace(downloadPath);
+
+	ga('send', {
+		hitType: 'event',
+		eventCategory: 'Asset Packs',
+		eventAction: 'download',
+		eventLabel: 'Survival Game Assets'
+	});
+
+	closeDownloadModal();
+}
+
+function closeDownloadModal () {
+	//$('#download-modal').addClass("hidden");
+	$("#download-modal").fadeOut();
+	console.log("Closing...");
+}
+
+</script>
+<script>
+
+	Snipcart.subscribe('cart.ready', function (data) {
+		Snipcart.api.cart.billingAddress({
+			"name": "",
+			"email": "",
+			"address1": " ",
+			"address2": " ",
+			"city": "",
+			"province": "",
+			"country": "",
+			"company": " ",
+			"postalCode": " "
+		})
+	});
+
+	Snipcart.api.configure('allowed_provinces', [
+		{ country: 'US', provinces: [''] },
+		{ country: 'CA', provinces: [''] },
+	]);
+
+	Snipcart.execute('registerLocale', 'en', {
+    "my_cart": "Dev Assets",
+    "my_cart_content": "Selected Asset",
+    "billing_address": "About Me",
+    "confirm_order": "Confirm",
+    "payment_method_card_exp_month": "Expiration month",
+    "finalize": "Support Now",
+    "thankyou_message": "Thank you for supporting! Your invoice has been sent to you by email, you should receive it soon.",
+    "notifications_item_not_added_due_to_max_quantity": "You already have that item selected."
+	});
+
+	Snipcart.subscribe('order.completed', function (data) {
+		openDownloadModal();
+	});
+
+</script>
+
+<section class="pay-buttons" data-toggle="button">
+
+	<button
+		id="pay-button"
+		class="snipcart-add-item pay"
+		data-item-name="Survival Game Assets"
+		data-item-id="survival-game-assets"
+		data-item-image="/img/assets/survival-game-assets/OneThird.jpg"
+		data-item-description="These are the models, sounds, scripts and UI elements used in the Survival Game course."
+		data-item-url="/assets/survival-game-assets/"
+		data-item-max-quantity="1"
+		data-item-price="5"
+		data-item-custom1-name="Price"
+		data-item-custom1-options="$2[-3.00]|$5|$10[+5.00]|$20[+15.00]"
+		data-item-custom2-name="Download"
+		data-item-custom2-value="/downloads/assets/survival-game-assets.zip">
+		Pay what you want!
+	</button>
+
+	<button
+		id="pay-button-free"
+		class="pay"
+		style="display: none;"
+		onclick="Download()">
+		Grab it for free!
+	</button>
+
+	<label class="amount-button"><input type="radio" value="0" name="options" id="5" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$0</span>
+	</label>
+
+	<label class="amount-button"><input type="radio" value="20" name="options" id="4" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$20</span>
+	</label>
+
+	<label class="amount-button"><input type="radio" value="10" name="options" id="3" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$10</span>
+	</label>
+
+	<label class="amount-button active"><input type="radio" value="5" name="options" id="2" autocomplete="off" onclick="updatePayAmount(this.value)" checked><span>$5</span>
+	</label>
+
+	<label class="amount-button"><input type="radio" value="2" name="options" id="1" autocomplete="off" onclick="updatePayAmount(this.value)"><span>$2</span>
+	</label>
+
+</section>
+
+<section class="tiers">
+
+
+	
+</section>
+
+<section>
+	<div class="message-box" id="msg-box-tier-1">
+		<p>WARNING: You will not recieve something! Add just $2 more to unlock!</p>
+		<a href="#" class="message-box-button" amount=2>Add $2</a>
+	</div>
+
+	<div class="message-box" id="msg-box-tier-2">
+		<p>WARNING: You will not recieve something! Add just $2 more to unlock!</p>
+		<a href="#" class="message-box-button" amount=2>Add $2</a>
+	</div>
+</section>
+
+<script>
+
+	$(function() {
+		updatePayAmount(5);
+	});
+
+	$(".tier").click(function() {
+		var tierCost = $(this).attr("data-cost");
+
+		if (tierCost == 0)
+			updatePayAmount(2);
+		else
+			updatePayAmount(tierCost);
+	});
+
+	function updatePayAmount(amount) {
+
+		var payButton = $('#pay-button');
+
+		var payButtonElement = document.getElementById( 'pay-button' );
+		var freeButtonElement = document.getElementById( 'pay-button-free' );
+
+		if (amount > 0) {
+			payButton.data('item-custom1-value', "$" + amount);
+
+			payButtonElement.style.display = 'block';
+			freeButtonElement.style.display = 'none';
+		} else {
+			payButtonElement.style.display = 'none';
+			freeButtonElement.style.display = 'block';
+		}
+
+		var tiers = {};
+
+		$('div.tier').each(function(i, obj) {
+
+			if (+amount >= +obj.dataset.cost) {
+				$(this).addClass("active");
+			} else {
+				$(this).removeClass("active");
+			}
+
+			tiers[obj.dataset.title] = +obj.dataset.cost;
+
+		});
+
+		var tierIndex = 0;
+
+		for (var title in tiers) {
+			if (tierIndex != 0) {
+				updateMessageBox(tierIndex, title, amount, tiers[title] - amount);
+
+				if (amount >= tiers[title]) {
+					var newPath = downloadPathShort + downloadFile + "-" + tierIndex  + "-" + downloadIDs[tierIndex] + downloadFileType;
+					updateDownloadPath(newPath);
+				}
+			} else {
+				var newPath = downloadPathShort + downloadFile + downloadFileType;
+				updateDownloadPath(newPath);
+			}
+
+			tierIndex++;
+		}
+
+		$("input[name=options]").each(function(i, obj) {
+
+			var buttonAmount = $(this).attr("value");
+
+			if (buttonAmount == amount) {
+				$(this).prop("checked", true);
+			}
+		});
+	}
+
+	$('.message-box-button').on("click", function(e){
+		var amount = $(this).attr("amount");
+		updatePayAmount(amount);
+
+		e.preventDefault();
+	});
+
+	function updateMessageBox (tier, title, amount, extra) {
+
+		var id = '#msg-box-tier-' + tier;
+		var tierCost = +amount + extra;
+
+		if (extra <= 0) {
+			$(id).hide();
+		} else {
+			$(id).show();
+		}
+
+		$(id).find("p").text("WARNING: You will not recieve " + title + "! Add just $" + extra + " more to unlock!");
+
+		$(id).find("a").text("Add $" + extra);
+		$(id).find("a").attr("amount", tierCost);
+	}
+
+</script>
+
+
+
+
+	<section class="video">
+		<div class="videoWrapper">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLPV2KyIb3jR7F_B4p8X3YwHPaExh0R9Kk" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+		</div>
+	</section>
+
+
+
+	<div class="separator"></div>
+
+
+<section class="three-random-assets">
+
+	
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	<div class="one-third-asset asset">
+	
+	
+
+	
+
+	<a href="/assets/desert-environment/">
+		<img src="/img/assets/desert-environment/OneThird.jpg" alt="Desert Environment">
+	</a>
+
+</div>
+	<div class="one-third-asset asset">
+	
+	
+
+	
+
+	<a href="/assets/evolve/">
+		<img src="/img/assets/evolve/OneThird.jpg" alt="Evolve">
+	</a>
+
+</div>
+	<div class="one-third-asset asset">
+	
+	
+
+	
+
+	<a href="/assets/followed/">
+		<img src="/img/assets/followed/OneThird.jpg" alt="Followed">
+	</a>
+
+</div>
+
+</section>
+      </div>
+    </main>
+
+    <footer>
+	<div class="wrapper">
+	<div class="first-third">
+			<p>If you are unsure about how you are allowed to use the assets please see the <a href="/guidelines/">Usage Guidelines</a>.</p>
+		</div>
+
+		<div class="second-third">
+			
+		</div>
+
+		<div class="third-third">
+			<p>
+				Powered by <br>
+				<a target="_blank" href="http://brackeys.com"><b>Brackeys</b></a>
+			</p>
+		</div>
+	</div>
+</footer>
+
+  </body>
+
+</html>

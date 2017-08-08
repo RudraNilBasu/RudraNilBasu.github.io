@@ -1,19 +1,27 @@
 ---
+# Name of the pack
 name: Evolve
 
-title: Evolve
-category: game
-engine: Unity 5
-platform: Windows
-genre: Arcade
-type: 2D
-role: Programmer, Designer
-banner: Banner.jpg
+# Short description
+description: Evolve was made within 72 hours for the 38th Ludum Dare with the theme “Small World”.
+
+game: true
+
+# List of assets in the pack
+assets:
+  - Unity5
+  - Platform:Windows
+  - 2D
+  - Role:Programmer,Designer
+
+# Names of the screenshots
 screenshots:
-  - Screenshot01.png
-  - Screenshot02.png
-  - Screenshot03.png
-download: https://ldjam.com/events/ludum-dare/38/evolve
+  - Screenshot01.jpg
+  - Screenshot02.jpg
+  - Screenshot03.jpg
+
+video: "https://www.youtube.com/embed/videoseries?list=PLPV2KyIb3jR42oVBU6K2DIL6Y22Ry9J1c"
+
 ---
 
-Evolve was made within 72 hours for the 38th Ludum Dare with the theme *"Small World"*
+Evolve was made within 72 hours for the 38th Ludum Dare with the theme "Small World". It was made using the Unity Engine, and I was responsible for the design, programming and art.
