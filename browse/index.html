@@ -7,10 +7,55 @@ style:
 title: Browse
 ---
 
-{% assign sorted_assets = (site.assets | sort: 'priority') %}
+{% assign sorted_assets = (site.assets | sort: 'year') %}
 
 <div class="browse">
 
+	{% include featured-two-thirds.html %}
+
+	{% include featured-one-third.html %}
+
+	{% include featured-banner.html %}
+
+        <h1>Video Game Development</h1>
+        <hr>
+        <p>Made with Unity game engine, all games are available on gamejolt.</p>
+
+        {% assign count = 0 %}
+        {% for asset in sorted_assets %}
+                {% if asset.game  %}
+                        {% include one-third-asset.html asset=asset %}
+                        {% assign count = count | plus: 1 %}
+                        {% if count >= 3 %}
+                                {% break %}
+                        {% endif %}
+                {% endif %}
+        {% endfor %}
+
+        <a href="/games/">View More</a>
+
+
+        <h1>Other Projects</h1>
+        <hr>
+        <p>Mostly open source projects, which can be found on <a href="http://github.com/RudraNilBasu">github.com/RudraNilBasu</a></p>
+
+        {% assign count = 0 %}
+        {% for asset in sorted_assets %}
+                {% if asset.game==false  %}
+                        {% include one-third-asset.html asset=asset %}
+                        {% assign count = count | plus: 1 %}
+                        {% if count >= 3 %}
+                                {% break %}
+                        {% endif %}
+                {% endif %}
+        {% endfor %}
+        <a href="/projects/">View More</a>
+
+        <h1>Awards</h1>
+        <hr>
+        <p>Few awards I have picked along the way</p>
+        <a href="/achievements/">View More</a>
+        <!--
 	{% include featured-two-thirds.html %}
 
 	{% include featured-one-third.html %}
@@ -44,6 +89,6 @@ title: Browse
 
 	</div>
 
-	{% include newsletter-field.html %}
+        -->
 
 </div>

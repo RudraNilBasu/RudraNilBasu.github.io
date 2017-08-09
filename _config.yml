@@ -37,9 +37,12 @@ snipcart-api-key: NjY3ZTgwNGQtNjM2Ni00YjUzLWExZGYtNjRjNGRlNzcxZmIwNjM2MTE0NTA4MD
 #M2RjMTc3NGUtYjNhMC00NTFlLWJjN2ItOTBkNGNkNDRjN2U2NjM2MTE0NTA4MDE5ODI4MDU5
 
 #Featured
-featured-banner: 2D Mega Pack
-featured-two-thirds: Sci-Fi Weapons
-featured-one-third: Desert Environment
+#2D Mega Pack
+#Sci-Fi Weapons
+#Desert Environment
+featured-banner: Followed
+featured-two-thirds: Supervision
+featured-one-third: Chalk
 
 home-banner: General Textures
 
