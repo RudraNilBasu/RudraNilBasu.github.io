@@ -1,0 +1,42 @@
+---
+layout: default
+
+style:
+  browse
+
+title: Projects
+---
+
+{% assign sorted_assets = (site.assets | sort: 'priority') %}
+
+<div class="browse">
+
+	<div class="course-assets" id="course-assets">
+
+	<h1>Projects</h1>
+
+        <h2>Industry Projects</h2>
+        <section>
+	{% for asset in sorted_assets %}
+		{% if asset.show and asset.game==false and asset.industry %}
+
+			{% include one-third-asset.html asset=asset %}
+			
+		{% endif %}
+	{% endfor %}
+        </section>
+
+        <h2>Personal Projects</h2>
+
+        <section>
+	{% for asset in sorted_assets %}
+		{% if asset.show and asset.game==false and asset.industry==false %}
+
+			{% include one-third-asset.html asset=asset %}
+			
+		{% endif %}
+	{% endfor %}
+        </section>
+
+	</div>
+</div>
