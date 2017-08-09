@@ -14,15 +14,30 @@ title: Games
 	<div class="course-assets" id="course-assets">
 
 	<h1>Video Game Projects</h1>
-	<p>Models, sprites, scripts, sounds etc. used in the <a href="http://youtube.com/brackeys/">Brackeys</a> courses.</p>
 
-	{% for asset in sorted_assets %}
+        {% assign game_year = '-1' %}
+        {% assign sorted = (sorted_assets | sort: 'year') | reverse %}
+
+        <section>
+	{% for asset in sorted %}
 		{% if asset.show and asset.game%}
 
+                        {% if asset.year != game_year%}
+                                {% if game_year != '-1'  %}
+                                        </section>
+                                        <section>
+                                {% endif %}
+                                {% assign game_year = asset.year %}
+                                <br>
+                                <p align="center">{{ game_year }}</p>
+                                <hr>
+                                <br>
+                        {% endif %}
 			{% include one-third-asset.html asset=asset %}
 			
 		{% endif %}
 	{% endfor %}
+        </section>
 
 	</div>
 </div>

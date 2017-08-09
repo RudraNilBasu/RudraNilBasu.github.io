@@ -7,7 +7,7 @@ description: A 2D puzzle platformer made within 72 hours for the 39th Ludum Dare
 
 is-for-course: true
 game: true
-year: 2017
+year: 2016
 
 # List of assets in the pack
 assets:

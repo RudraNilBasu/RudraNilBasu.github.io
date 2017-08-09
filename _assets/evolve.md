@@ -6,6 +6,7 @@ name: Evolve
 description: Evolve was made within 72 hours for the 38th Ludum Dare with the theme “Small World”.
 
 game: true
+year: 2017
 
 # List of assets in the pack
 assets:
