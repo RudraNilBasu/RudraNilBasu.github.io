@@ -1,0 +1,97 @@
+---
+layout: default
+
+style:
+  home
+
+title: Achievements
+---
+
+{% assign sorted_assets = (site.assets | sort: 'priority') %}
+
+<div class="browse">
+
+        <!--
+	<div class="course-assets" id="course-assets">
+
+	<h1>Projects</h1>
+
+        <h2>Industry Projects</h2>
+        <section>
+	{% for asset in sorted_assets %}
+		{% if asset.show and asset.game==false and asset.industry %}
+
+			{% include one-third-asset.html asset=asset %}
+			
+		{% endif %}
+	{% endfor %}
+        </section>
+
+        <h2>Personal Projects</h2>
+
+        <section>
+	{% for asset in sorted_assets %}
+		{% if asset.show and asset.game==false and asset.industry==false %}
+
+			{% include one-third-asset.html asset=asset %}
+			
+		{% endif %}
+	{% endfor %}
+        </section>
+
+	</div>
+        -->
+        <section>
+                <h1>Major Awards</h1>
+        </section>
+
+
+        <section>
+                <h1>Game Jams</h1>
+        <section class="three-sections">
+                <div>
+                        <h2>GameJolt Jams</h2>
+                        <ul>
+                                <li>Asylum Jam 2015: 3rd</li>
+                                <li>Asylum Jam 2015: 30th</li>
+                        </ul>
+                </div>
+                <div>
+                        <h2>Ludum Dare</h2>
+                        <ul>
+                                <li>LD 38: 418 (Theme), 318 (Graphics)</li>
+                                <li>LD 33: 267 (Mood)</li>
+                        </ul>
+                </div>
+                <div>
+                        <h2>Global Game Jam</h2>
+                        <ul>
+                                <li>2017: <i>Trapped (non-competitive)</i></li>
+                        </ul>
+                </div>
+        </section>
+        </section>
+
+
+        <section class="three-sections">
+        <h1>Miscellaneous</h1>
+                        <div>
+                                <h2>Coverage</h2>
+                                <ul>
+                                        <li> <a href="https://opensource.com/article/17/6/gcompris-development">Young programmer turns love of gaming into a Google Summer of Code project</a> by <a href="https://opensource.com/" target="_blank">opensource.com</a> </li>
+                                        <li> <a href="http://www.pocketgamer.biz/asia/news/64434/nasscom-gaming-forum-awards-2016/" target="_blank">NASSCOM Gaming Forum Awards 2016 honour the best in Indian game development</a>" by <a href="http://www.pocketgamer.biz" target="_blank">PocketGamer</a> </li>
+                                </ul>
+                        </div>
+                        <div></div>
+                        <div>
+                                <h2>Other Experiences</h2>
+                                <ul>
+                                        <li><a href="https://summerofcode.withgoogle.com/" target="_blank">Google Summer of Code</a> <a href="https://summerofcode.withgoogle.com/projects/#6332354560786432" target="_blank">student</a> at KDE (2017).</li>
+                                        <li>Head of <a href="https://bytesclub.github.io/" target="_blank">Bytes Club</a>, the open source community for WBUT In-House</li>
+                                        <li>Participated in various online and offline coding competition in Codechef/Hackerrank platform.</li>
+                                        <li>Participated in Global Game Jam 2017, with the theme "<i>Waves</i>" (Kolkata site)</li>
+                                        <li>First place in mechanical design, for <i>Skyfall</i>, a manual robotics event for KSHITIJ 2015, the annual Tech Fest organised by IIT, Kharagpur.</li>
+                                </ul>
+                        </div>
+        </section>
+</div>
