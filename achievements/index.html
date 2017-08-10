@@ -2,7 +2,8 @@
 layout: default
 
 style:
-  home
+  - home
+  - asset-view
 
 title: Achievements
 ---
@@ -43,6 +44,14 @@ title: Achievements
         -->
         <section>
                 <h1>Major Awards</h1>
+
+                {% for asset in sorted_assets %}
+                        {% if asset.awards %}
+                        {% assign img-folder = asset.title | remove: " -" | replace: " ", "-" | downcase %}
+                        {% assign img-path = site.asset-img-path | append: img-folder %}
+                                <img class="award" width="214" height="119" src="{{site.github.url}}{{img-path}}/{{asset.awards}}" alt="{{page.title}} Award    " border="0">
+                        {% endif %}
+                {% endfor %}
         </section>
 
 

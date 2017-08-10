@@ -12,23 +12,17 @@ year: 2017
 
 # List of assets in the pack
 assets:
-  - Platformer
-  - Top-down
-  - Tower Defense
-  - Gold Miner
-  - PONG
-  - Animated Character
-  - Sounds
-  - Scripts
-  - .psd files
+  - KDE
+  - GSoC 2017
+  - Qt
 
 # Names of the screenshots
 screenshots:
-  - Screenshot01.jpg
-  - Screenshot02.jpg
-  - Screenshot03.jpg
+  - Screenshot01.png
+  - Screenshot02.png
+  - Screenshot03.png
 
-video: "https://www.youtube.com/embed/videoseries?list=PLPV2KyIb3jR42oVBU6K2DIL6Y22Ry9J1c"
+#video: "https://www.youtube.com/embed/videoseries?list=PLPV2KyIb3jR42oVBU6K2DIL6Y22Ry9J1c"
 
 ---
 
@@ -43,5 +37,5 @@ This version is a full rewrite of GCompris using the QtQuick technology. It is d
 As a Google Summer of Code student, I was responsible for adding three new activities for GCompris: 
 
 * Submarine: Which aims at creating a simulation of a submarine using [box2d](http://box2d.org/).
-* Family: To 
+* Family: To show how people are related to their relatives.
 * Digital Electricity: A simulation of digital electric circuit.

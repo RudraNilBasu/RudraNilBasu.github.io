@@ -6,7 +6,7 @@ name: Followed
 description: Followed is a 3D horror game made within 72 hours for the 2016 Asylum Jam
 
 game: true
-year: 2017
+year: 2016
 
 # List of assets in the pack
 assets:

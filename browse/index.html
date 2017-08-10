@@ -2,7 +2,8 @@
 layout: default
 
 style:
-  browse
+  - browse
+  - asset-view
 
 title: Browse
 ---
@@ -54,7 +55,17 @@ title: Browse
         <h1>Awards</h1>
         <hr>
         <p>Few awards I have picked along the way</p>
-        <a href="/achievements/">View More</a>
+        <section>
+        {% for asset in sorted_assets %}
+                        {% if asset.awards %}
+                        {% assign img-folder = asset.title | remove: " -" | replace: " ", "-" | downcase %}
+                        {% assign img-path = site.asset-img-path | append: img-folder %}
+                                <img class="award" width="214" height="119" src="{{site.github.url}}{{img-path}}/{{asset.awards}}" alt="{{page.title}} Award    " border="0">
+                        {% endif %}
+                {% endfor %}
+        </section>
+        <section><a href="/achievements/">View More</a></section>
+        
         <!--
 	{% include featured-two-thirds.html %}
 

@@ -38,10 +38,16 @@ style:
 		{% else %}
 			<p>{{ page.content }}</p>
 		{% endif %}
+                {% if page.awards %}
+                        <h3>Awards:</h3>
+                        {% for award in page.awards %}
+                                <img class="award" width="214" height="119" src="{{site.github.url}}{{img-path}}/{{award}}" alt="{{page.title}} Award    " border="0">
+                        {% endfor %}
+                {% endif %}
 		
 	</div>
 	<div class="contains">
-		<h3>Contains:</h3>
+		<h3>Quick Info:</h3>
 		<ul>
 			{% for asset in page.assets %}
 			<li>{{asset}}</li>
@@ -50,11 +56,13 @@ style:
 	</div>
 </section>
 
+<!--
 {% include pay-buttons.html %}
 
 {% if page.artist %}
 	{% include artist-credit.html %}
 {% endif %}
+-->
 
 {% if page.video %}
 	<section class="video">
@@ -70,4 +78,4 @@ style:
 	<div class="separator"></div>
 {% endif %}
 
-{% include three-random-assets.html %}
+<!--{% include three-random-assets.html %}-->
