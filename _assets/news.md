@@ -16,13 +16,13 @@ assets:
   - Python
 
 # Names of the screenshots
-screenshots:
-  - Screenshot01.jpg
-  - Screenshot02.jpg
-  - Screenshot03.jpg
+#screenshots:
+#  - Screenshot01.jpg
+#  - Screenshot02.jpg
+#  - Screenshot03.jpg
 
 #video: "https://www.youtube.com/embed/videoseries?list=PLPV2KyIb3jR42oVBU6K2DIL6Y22Ry9J1c"
 
 ---
 
-Get current day's news.
+*News* is a project which produces the current day's news in Portable Document Format (PDF).
