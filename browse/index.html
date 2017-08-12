@@ -20,7 +20,6 @@ title: Browse
 
         <h1>Video Game Development</h1>
         <hr>
-        <p>Made with Unity game engine, all games are available on gamejolt.</p>
 
         {% assign count = 0 %}
         {% for asset in sorted_assets %}
@@ -33,12 +32,14 @@ title: Browse
                 {% endif %}
         {% endfor %}
 
-        <a href="/games/">View More</a>
+        <!--<div class="btn"><p align="center"><a href="/games/">View More</a></p></div>-->
+        <!--<p align="center"><a href="/games/" class="btn">View More</a></p>-->
+        <p align="center">Made with Unity game engine, all games are available on <a href="http://gamejolt.com/@r_n_b" target="_blank">gamejolt.com/@r_n_b</a>.</p>
+        <div class="button"><a href="/games/" class="big-button">View More</a></div>
 
 
         <h1>Other Projects</h1>
         <hr>
-        <p>Mostly open source projects, which can be found on <a href="http://github.com/RudraNilBasu">github.com/RudraNilBasu</a></p>
 
         {% assign count = 0 %}
         {% for asset in sorted_assets %}
@@ -50,11 +51,12 @@ title: Browse
                         {% endif %}
                 {% endif %}
         {% endfor %}
-        <a href="/projects/">View More</a>
+        <p align="center">Mostly open source projects, which can be found on <a href="http://github.com/RudraNilBasu">github.com/RudraNilBasu</a></p>
+        <div class="button"><a href="/projects/" class="big-button">View More</a></div>
 
         <h1>Awards</h1>
         <hr>
-        <p>Few awards I have picked along the way</p>
+        <p align="center">Few awards I have picked along the way</p>
         <section>
         {% for asset in sorted_assets %}
                         {% if asset.awards %}
@@ -64,7 +66,8 @@ title: Browse
                         {% endif %}
                 {% endfor %}
         </section>
-        <section><a href="/achievements/">View More</a></section>
+        <section><br></section>
+        <section><div class="button"><a href="/achievements/" class="big-button">View More</a></div></section>
         
         <!--
 	{% include featured-two-thirds.html %}
