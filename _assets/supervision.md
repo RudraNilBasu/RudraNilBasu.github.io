@@ -27,3 +27,6 @@ screenshots:
 ---
 
 A 2D puzzle platformer made within 72 hours for the 39th Ludum Dare.
+
+* Responsible for both the programming and art
+* Levels were generated using [a level generator script](https://github.com/RudraNilBasu/LD39/blob/master/LD39/LD39/Assets/Scripts/LevelGenerator.cs), which can convert a pixel from an image to a Unity prefab.
