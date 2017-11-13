@@ -21,6 +21,9 @@ screenshots:
   - Screenshot02.jpg
   - Screenshot03.jpg
 
+awards:
+  - NGDC2017.png
+
 video: "https://www.youtube.com/embed/XY8aksSPSV0"
 
 ---
