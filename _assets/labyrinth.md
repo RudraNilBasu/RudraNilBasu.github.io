@@ -1,16 +1,16 @@
 ---
 # Name of the pack
-name: Rampage
+name: Labyrinth
 
 # Short description
 description: Rampage is a first person shooter made for a university project
 
 game: true
-year: 2017
+year: 2018
 
 # List of assets in the pack
 assets:
-  - Unity5
+  - Unity 2018
   - Platform:Windows
   - 3D
   - Role:Programmer,Designer
