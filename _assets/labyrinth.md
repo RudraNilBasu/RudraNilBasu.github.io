@@ -1,14 +1,13 @@
 ---
-# Name of the pack
 name: Labyrinth
 
 # Short description
-description: Rampage is a first person shooter made for a university project
+description: Labyrinth is a first person shooter made for a university project
 
 game: true
 year: 2018
 
-# List of assets in the pack
+# Brief Description
 assets:
   - Unity 2018
   - Platform:Windows
@@ -25,8 +24,9 @@ screenshots:
 
 ---
 
-Rampage is a first person shooter made for a university project. As a programmer, I was responsible for developing the endless terrain system, the AI and the player controls.
+Labyrinth is a first person shooter originally made for a final year university project.
 
 ### Download Link
 
-* [Windows](https://t.co/CCluCvQs0h)
+* [Source Code](https://github.com/PhoenixRRDS/Labyrinth)
+* [Windows (Coming Soon)]()
