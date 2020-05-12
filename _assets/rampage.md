@@ -7,6 +7,7 @@ description: Rampage is a first person shooter made for a university project
 
 game: true
 year: 2017
+showcase: false
 
 # List of assets in the pack
 assets:

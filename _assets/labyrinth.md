@@ -6,6 +6,7 @@ description: Labyrinth is a first person shooter made for a university project
 
 game: true
 year: 2018
+showcase: false
 
 # Brief Description
 assets:

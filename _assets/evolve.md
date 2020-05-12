@@ -7,6 +7,7 @@ description: Evolve was made within 72 hours for the 38th Ludum Dare with the th
 
 game: true
 year: 2017
+showcase: true
 
 # List of assets in the pack
 assets:

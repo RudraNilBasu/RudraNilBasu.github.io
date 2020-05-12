@@ -7,6 +7,7 @@ description: Retention is a game about about generating lost memories. It was ma
 
 game: true
 year: 2017
+showcase: true
 
 # List of assets in the pack
 assets:

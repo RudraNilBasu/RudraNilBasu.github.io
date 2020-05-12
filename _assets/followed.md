@@ -7,6 +7,7 @@ description: Followed is a 3D horror game made within 72 hours for the 2016 Asyl
 
 game: true
 year: 2016
+showcase: true
 
 # List of assets in the pack
 assets:

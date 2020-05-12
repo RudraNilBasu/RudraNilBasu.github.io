@@ -15,23 +15,31 @@ title: Games
 
 	<h1>Video Game Projects</h1>
 
+	<h3>Few Recent ones</h3>
+	<p>The Myth: <a href="https://rudra.itch.io/the-myth">Itch.io</a></p>
+	<p>One at a Time (GMTK Game Jam): <a href="https://rudra.itch.io/only-one-at-a-time-gmtk">Itch.io</a></p>
+	<p>The Descendant (44th Ludum Dare): <a href="https://rudra.itch.io/the-descendant">Itch.io</a> |  <a href="https://gamejolt.com/games/the_descendant/411716">GameJolt</a></p>
+	<p>Space Time (42nd Ludum Dare): <a href="https://gamejolt.com/games/space_time/361177">GameJolt</a></p>
+
+	<h3>Other Games sorted by year</h3>
+
         {% assign game_year = '-1' %}
         {% assign sorted = (sorted_assets | sort: 'year') | reverse %}
 
         <section>
 	{% for asset in sorted %}
-		{% if asset.show and asset.game%}
+		{% if asset.show and asset.game and asset.showcase%}
 
                         {% if asset.year != game_year%}
-                                {% if game_year != '-1'  %}
-                                        </section>
-                                        <section>
-                                {% endif %}
-                                {% assign game_year = asset.year %}
-                                <br>
-                                <p align="center">{{ game_year }}</p>
-                                <hr>
-                                <br>
+				{% if game_year != '-1'  %}
+					</section>
+					<section>
+				 {% endif %}
+			  {% assign game_year = asset.year %}
+			  <br>
+			  <p align="center">{{ game_year }}</p>
+			  <hr>
+			  <br>
                         {% endif %}
 			{% include one-third-asset.html asset=asset %}
 			

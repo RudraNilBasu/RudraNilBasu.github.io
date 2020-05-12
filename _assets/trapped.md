@@ -7,6 +7,7 @@ description: Trapped was made within 48 hours for 2017 Global Game Jam 2017.
 
 game: true
 year: 2017
+showcase: true
 
 # List of assets in the pack
 assets:

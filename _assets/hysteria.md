@@ -7,6 +7,7 @@ description: Hysteria is a WIP 3D horror game.
 
 game: true
 year: 2016
+showcase: false
 
 # List of assets in the pack
 assets:

@@ -7,6 +7,7 @@ description: The Hunger Game was made within 48 hours for badboxart jam, 2016.
 
 game: true
 year: 2016
+showcase: false
 
 # List of assets in the pack
 assets:

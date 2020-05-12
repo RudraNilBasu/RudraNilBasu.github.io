@@ -7,6 +7,7 @@ description: DuraTron was made within 48 hours for BYOG 2016.
 
 game: true
 year: 2016
+showcase: true
 
 # List of assets in the pack
 assets:
