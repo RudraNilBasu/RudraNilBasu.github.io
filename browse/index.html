@@ -8,7 +8,7 @@ style:
 title: Browse
 ---
 
-{% assign sorted_assets = (site.assets | sort: 'year') %}
+{% assign sorted_assets = (site.assets | sort: 'year' | reverse) %}
 
 <div class="browse">
 
