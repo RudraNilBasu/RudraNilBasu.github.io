@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Game Designer, Programmer
   Rudra Nil Basu - Personal portfolio
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "https://rudranilbasu.github.io" # the base hostname & protocol for your site
 twitter_username: RudraNilBasu
 github_username:  RudraNilBasu
 
